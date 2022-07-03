@@ -16,7 +16,7 @@
 
 </script>
 
-<footer class="max-w-5xl mx-auto bg-white py-4">
+<footer class="max-w-5xl mx-auto py-4">
 <section class="about py-4">
   <div class="w-[200px] mx-auto pb-4">
     <img preload src="/assets/full_logo.png" alt="CSGS Logo"/>
