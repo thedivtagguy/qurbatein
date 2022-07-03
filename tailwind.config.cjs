@@ -7,6 +7,11 @@ module.exports = {
         divpurple: "#623cea",
         divorange: "#f85e00"
         // ...
+      },
+      fontFamily: {
+        cormorant: ["Cormorant Garamond", "serif"],
+        libre: ["Libre Baskerville", "serif"],
+        dm: ["DM Serif Display", "serif"],
       }
     }
   },

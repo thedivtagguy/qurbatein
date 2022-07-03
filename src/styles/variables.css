@@ -1,26 +1,19 @@
 /**
  * Do not edit directly
- * Generated on Mon, 20 Dec 2021 18:00:14 GMT
+ * Generated on Sun, 03 Jul 2022 16:50:00 GMT
  */
 
 :root {
-  --category-blue: #4477aa;
-  --category-red: #ee6677;
+  --category-blue: #4477AA;
+  --category-red: #EE6677;
   --category-green: #228833;
-  --category-yellow: #ccbb44;
-  --category-cyan: #66ccee;
-  --category-purple: #aa3377;
-  --category-gray: #bbbbbb;
-  --color-black: #000000;
-  --color-off-black: #282828;
-  --color-gray-dark: #5b5b5b;
-  --color-gray-medium: #949494;
-  --color-gray-light: #c9c9c9;
-  --color-off-white: #f0f0f0;
-  --color-white: #ffffff;
-  --color-purple: #a239ca;
-  --color-blue: #4717f6;
-  --color-green: #34a29e;
-  --color-red: #ff533d;
-  --color-yellow: #e5e338;
+  --category-yellow: #CCBB44;
+  --category-cyan: #66CCEE;
+  --category-purple: #AA3377;
+  --category-gray: #BBBBBB;
+  --color-background: #f4f3ee;
+  --color-text: #38322e;
+  --color-primary: #090446;
+  --color-secondary: #d1462f;
+  --color-accent: #8e7dbe;
 }

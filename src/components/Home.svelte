@@ -1,9 +1,9 @@
 <script>
-import Header from "./Header.svelte";
+import Hero from "./Hero.svelte";
 </script>
 
 <!-- Iterate and show all story headings -->
 <main class="">
-<Header />
+<Hero />
 
 </main>

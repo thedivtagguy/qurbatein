@@ -16,7 +16,7 @@ if (!fs.existsSync(posts)) {
   fs.mkdirSync(posts);
 }
 
-const topFolderId = "1YCZxZ7ACu9f3aS8LpV5uD7VxPdEya7FS"; // Please set the top folder ID.
+const topFolderId = "1hxtdZqWgoMbTlvxa57wfN9_SHdzlvdXu"; // Please set the top folder ID.
 getfilelist.GetFileList(
   {
     auth: auth,
@@ -29,7 +29,7 @@ getfilelist.GetFileList(
       return;
     }
     const fileList = res.fileList.flatMap(({ files }) => files);
-    
+    console.log(fileList);
 
     const fileListString = fileList
       .map(
