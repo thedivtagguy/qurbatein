@@ -16,6 +16,19 @@
    body{
     background-color: var(--color-background);
    }
+
+   .hover-content{
+      @apply hover:border-2 hover:border-[color:var(--color-accent)] hover:shadow-lg hover:cursor-pointer;
+   }
+
+   .divider{
+    @apply  border-black border-[1px] w-1/2 mx-auto my-6;
+
+   }
+   .divider-white{
+    @apply  border-white border-[1px] w-1/2 mx-auto my-6;
+
+   }
 }
 
 /* Injects Tailwind's component classes & any component classes registered by plugins. */
