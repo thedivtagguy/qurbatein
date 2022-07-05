@@ -9,7 +9,7 @@
       <div class="col-span-4  h-full">
         <div class=" col-span-5 flex items-center ">
               <ul class="grid grid-cols-6 gap-6 w-4/5">
-                <li class="col-span-6 border-2 p-4 border-black">
+                <li class="col-span-6 border-2 p-4 hover-content border-black">
                     <blockquote class="flex image1   h-[180px] overlay items-center justify-between w-full col-span-1 p-4">
                         <div class="flex  flex-col pr-10">
                             <div class="relative pl-12">
@@ -23,7 +23,7 @@
                         </div>
                     </blockquote>
                  </li>
-                 <li class="col-span-6 border-2 p-4 border-black">
+                 <li class="col-span-6 border-2 p-4 hover-content border-black">
                     <blockquote class="flex image2   h-[180px] overlay items-center justify-between w-full col-span-1 p-4">
                         <div class="flex  flex-col pr-10">
                             <div class="relative pl-12">
@@ -37,7 +37,7 @@
                         </div>
                     </blockquote>
                  </li>
-                 <li class="col-span-6 border-2 p-4 border-black">
+                 <li class="col-span-6 border-2 p-4 hover-content border-black">
                     <blockquote class="flex image3   h-[180px] overlay items-center justify-between w-full col-span-1 p-4">
                         <div class="flex  flex-col pr-10">
                             <div class="relative pl-12">
