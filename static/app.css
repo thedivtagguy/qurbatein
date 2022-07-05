@@ -724,6 +724,9 @@ body{
 .border-b-2 {
   border-bottom-width: 2px;
 }
+.border-t-2 {
+  border-top-width: 2px;
+}
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
@@ -753,6 +756,10 @@ body{
 }
 .bg-\[color\:var\(--color-primary\)\] {
   background-color: var(--color-primary);
+}
+.bg-\[color\:\#e3d5ca\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 213 202 / var(--tw-bg-opacity));
 }
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
@@ -820,6 +827,10 @@ body{
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .pb-5 {
   padding-bottom: 1.25rem;
@@ -937,6 +948,10 @@ body{
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-\[color\:\#e3d5ca\] {
+  --tw-text-opacity: 1;
+  color: rgb(227 213 202 / var(--tw-text-opacity));
 }
 .decoration-dashed {
   -webkit-text-decoration-style: dashed;
@@ -1143,5 +1158,14 @@ body{
   }
   .lg\:text-\[1\.5rem\] {
     font-size: 1.5rem;
+  }
+  .lg\:text-\[8rem\] {
+    font-size: 8rem;
+  }
+  .lg\:text-\[16rem\] {
+    font-size: 16rem;
+  }
+  .lg\:text-\[15rem\] {
+    font-size: 15rem;
   }
 }

@@ -5,7 +5,7 @@
     console.log(photoEssay)
   </script>
   
-  <section class="grid min-h-[50vh] py-8 px-24 grid-cols-8 gap-8 justify-between items-start">
+  <section class="grid bg-[color:#e3d5ca] min-h-[50vh] py-20 px-24 grid-cols-8 gap-8 justify-between items-start">
       <div class="col-span-4  h-full">
         <div class=" col-span-5 flex items-center ">
               <ul class="grid grid-cols-6 gap-6 w-4/5">
@@ -61,7 +61,7 @@
                 <div class="h-[300px] p-8">
                     <img src="/assets/photoInset.jpg" width="500" alt="Inset">
                 </div>
-                <div class="h-[380px] p-12 flex justify-end items-center bg-[color:var(--color-background)]">
+                <div class="h-[380px] border-t-2 border-black border-r-2 p-12 flex justify-end items-center bg-[color:#e3d5ca]">
                     <h2 class="text-xl font-cormorant  font-black italic leading-10 tracking-tight text-left text-[color:var(--color-text)] md:text-right sm:leading-none md:text-6xl lg:text-[10rem]">Photo<br>Essays</h2>
 
                 </div>
