@@ -18,7 +18,7 @@
    }
 
    .hover-content{
-      @apply hover:border-2 hover:border-[color:var(--color-accent)] hover:shadow-lg hover:cursor-pointer;
+      @apply hover:border-2 hover:border-[color:var(--color-accent)] hover:cursor-pointer;
    }
 
    .divider{
