@@ -1,5 +1,5 @@
 <script>
-  export let title = "Aman Bhargava";
+  export let title = "Qurbatein";
   export let description =
     "Aman's platform for a regular mishmash of design and code gimmickry";
   export let url = "https://thedivtagguy.com";
