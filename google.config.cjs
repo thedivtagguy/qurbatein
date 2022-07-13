@@ -16,10 +16,6 @@ module.exports = [
     id: "12WJEIw1AHNHsA65G39xEPOtumhSLHmMQ",
     filepath: "src/data/posts/habits.json"
   },
-  // {
-  //   id: "1D00TAgEzBgyYwNZFOXpD6hjVBGBeZAK0",
-  //   filepath: "src/data/posts/metro-nome-love.json"
-  // },
   {
     id: "15jxs093tGohTezZ1AFlje9QUsr34zlFiIgRRWcLcKOI",
     filepath: "src/data/posts/after-maidan-garhi.json"
