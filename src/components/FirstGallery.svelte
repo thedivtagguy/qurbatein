@@ -8,7 +8,7 @@
          A Nice Headline Fits Here
       </h2>
       <p class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-          Use our award-winning tools to help you maximize your profits. We've uncovered the correct recipe for converting visitors into customers.
+        Lorem ipsum dolor sit amet, inermis detracto elaboraret ius at. Noluisse fabellas his no. Eos ex idque diceret fastidii, duo an lorem explicari. Ut per ullum evertitur, melius animal in has.
       </p>
      
   </div>
