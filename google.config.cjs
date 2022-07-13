@@ -4,4 +4,8 @@ module.exports = [
     gid: "0",
     filepath: "src/data/content.csv"
   },
+  {
+    id: "1VAVuNJLOnqc_wD92jESoOyfqzWM98W7A",
+    filepath: "src/data/posts/desiring-delhi.json"
+  }
 ];
