@@ -21,10 +21,6 @@ module.exports = [
     filepath: "src/data/posts/metro-nome-love.json"
   },
   {
-    id: "1yixoNuC8B2Yug7Y46fbh446jPb77zln4",
-    filepath: "src/data/posts/arrival.json"
-  },
-  {
     id: "15jxs093tGohTezZ1AFlje9QUsr34zlFiIgRRWcLcKOI",
     filepath: "src/data/posts/after-maidan-garhi.json"
   }

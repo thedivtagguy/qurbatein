@@ -33,7 +33,6 @@ export const prerender = true;
     // Combine story and post into one object called post
     export let post;
     let titleClass;
-console.log(post);
 	// Calculate title length
     const titleLength = post.title.length;
     // If title length is greater than 15, set titleClass to "text-gray-900"
