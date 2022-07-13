@@ -1,4 +1,5 @@
 <script>
+import Articles from "./Articles.svelte";
 import FirstGallery from "./FirstGallery.svelte";
 import Hero from "./Hero.svelte";
 import PhotoEssay from "./PhotoEssay.svelte";
@@ -11,4 +12,5 @@ import Poetry from "./Poetry.svelte";
 <FirstGallery />
 <Poetry />
 <PhotoEssay />
+<Articles />
 </main>

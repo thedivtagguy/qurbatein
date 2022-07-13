@@ -12,6 +12,7 @@ module.exports = {
         cormorant: ["Cormorant Garamond", "serif"],
         libre: ["Libre Baskerville", "serif"],
         dm: ["DM Serif Display", "serif"],
+        poppins: ["Poppins", "sans-serif"],
       }
     }
   },

@@ -470,6 +470,14 @@ body{
   margin-left: 0px;
   margin-right: 0px;
 }
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -496,6 +504,9 @@ body{
 }
 .mt-1 {
   margin-top: 0.25rem;
+}
+.mt-8 {
+  margin-top: 2rem;
 }
 .block {
   display: block;
@@ -584,6 +595,9 @@ body{
 }
 .w-4\/5 {
   width: 80%;
+}
+.w-3\/5 {
+  width: 60%;
 }
 .max-w-5xl {
   max-width: 64rem;
@@ -717,14 +731,14 @@ body{
 .border-b-2 {
   border-bottom-width: 2px;
 }
-.border-r-\[1px\] {
-  border-right-width: 1px;
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
 }
-.border-l-\[1px\] {
-  border-left-width: 1px;
+.border-t-\[3px\] {
+  border-top-width: 3px;
 }
-.border-none {
-  border-style: none;
+.border-t-\[4px\] {
+  border-top-width: 4px;
 }
 .border-gray-100 {
   --tw-border-opacity: 1;
@@ -738,8 +752,11 @@ body{
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-.border-opacity-40 {
-  --tw-border-opacity: 0.4;
+.border-\[color\:var\(--color-border\)\] {
+  border-color: var(--color-border);
+}
+.border-\[color\:var\(--color-accent\)\] {
+  border-color: var(--color-accent);
 }
 .bg-\[color\:\#F5EBE0\] {
   --tw-bg-opacity: 1;
@@ -763,6 +780,21 @@ body{
 .bg-\[color\:var\(--color-background\)\] {
   background-color: var(--color-background);
 }
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+.bg-\[color\:var\(--color-secondary\)\] {
+  background-color: var(--color-secondary);
+}
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -785,6 +817,9 @@ body{
 }
 .p-12 {
   padding: 3rem;
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .px-6 {
   padding-left: 1.5rem;
@@ -830,6 +865,18 @@ body{
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -848,11 +895,20 @@ body{
 .pl-12 {
   padding-left: 3rem;
 }
+.pt-24 {
+  padding-top: 6rem;
+}
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
 .text-left {
   text-align: left;
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -865,6 +921,18 @@ body{
 }
 .font-libre {
   font-family: Libre Baskerville, serif;
+}
+.font-poppins {
+  font-family: Poppins, sans-serif;
+}
+.font-dm {
+  font-family: DM Serif Display, serif;
+}
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+.font-\[extrabold\] {
+  font-family: extrabold;
 }
 .text-5xl {
   font-size: 3rem;
@@ -886,6 +954,34 @@ body{
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -900,6 +996,9 @@ body{
 }
 .font-black {
   font-weight: 900;
+}
+.font-normal {
+  font-weight: 400;
 }
 .italic {
   font-style: italic;
@@ -936,6 +1035,10 @@ body{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
 .decoration-dashed {
   -webkit-text-decoration-style: dashed;
           text-decoration-style: dashed;
@@ -970,6 +1073,9 @@ body{
 /* custom CSS goes here */
 /* Directive controlling where Tailwind injects responsive variations of utilities.
    By default Tailwind normally append these at the end of your stylesheet. */
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
 .hover\:border-2:hover {
   border-width: 2px;
 }
@@ -984,6 +1090,9 @@ body{
 .hover\:text-indigo-600:hover {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+.hover\:text-\[color\:var\(--color-text\)\]:hover {
+  color: var(--color-text);
 }
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline;
@@ -1116,9 +1225,6 @@ body{
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-  .lg\:border-solid {
-    border-style: solid;
   }
   .lg\:px-0 {
     padding-left: 0px;
