@@ -40,5 +40,6 @@ console.log(post);
 </script>
 
 <main>
+    hiiii
 {post.category}
 </main>
