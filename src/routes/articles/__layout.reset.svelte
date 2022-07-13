@@ -3,6 +3,7 @@
     import Menu from "$components/Menu.svelte";
     import Meta from "$components/Meta.svelte";
     import Footer from "$components/Footer.svelte";
+    import Related from "$components/Related.svelte";
     import "/src/styles/tailwind.css";
     export const router = true;
   
@@ -12,5 +13,6 @@
     <Meta/>
    <Menu/>
     <slot />
+    <Related number="2" related="articles"/>
     <Footer/>
   </main>

@@ -1,7 +1,7 @@
 <script>
     import content from "$data/content.csv"
     // Keep only content that has category "article"
-    const article = content.filter(item => item.category === "article")
+    const article = content.filter(item => item.category === "articles")
   </script>
   
   <section class="lg:grid lg:min-h-[50vh] py-12 lg:pt-28 lg:px-24 lg:grid-cols-8 gap-8 justify-end items-start">

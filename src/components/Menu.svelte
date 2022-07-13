@@ -1,7 +1,7 @@
 <nav class="relative  max-w-5xl mx-auto mb-12  z-50 py-8 h-24 select-none" x-data="false">
-    <div class="container relative flex flex-wrap items-center justify-between h-24 mx-auto overflow-hidden font-medium border-b border-gray-300 md:overflow-visible lg:justify-center sm:px-4 md:px-2 lg:px-0">
-        <div class="flex items-center justify-start w-1/4 h-full pr-4">
-            <a href="/" class="inline-block p-4 md:py-0">
+    <div class="container relative flex flex-wrap items-center justify-between h-24 mx-auto overflow-hidden font-medium pb-8 border-b border-[color:var(--color-text)] md:overflow-visible lg:justify-center sm:px-4 md:px-2 lg:px-0">
+        <div class="flex items-center p-8 justify-start w-1/4 h-full pr-4">
+            <a href="/" class="inline-block p-4 ">
                <img src="/assets/csgs-logo.png" width="70" alt="Main Logo">
             </a>
         </div>
