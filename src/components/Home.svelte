@@ -4,6 +4,7 @@ import FirstGallery from "./FirstGallery.svelte";
 import Hero from "./Hero.svelte";
 import PhotoEssay from "./PhotoEssay.svelte";
 import Poetry from "./Poetry.svelte";
+import Prose from "./Prose.svelte";
 </script>
 
 <!-- Iterate and show all story headings -->
@@ -13,4 +14,5 @@ import Poetry from "./Poetry.svelte";
 <Poetry />
 <PhotoEssay />
 <Articles />
+<Prose />
 </main>

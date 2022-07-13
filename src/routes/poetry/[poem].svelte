@@ -49,17 +49,18 @@ console.log(post);
 
 
 <!-- Section 1 -->
-<section class="w-full py-24">
+<section class="w-4/5 mx-auto py-16">
 
-    <div class="mx-auto max-w-7xl">
+    <div class="mx-auto w-full">
         <div class="flex flex-col lg:flex-row">
             <div class="relative w-full bg-cover lg:w-6/12 xl:w-7/12 ">
-                <div class="relative flex flex-col items-center justify-center w-full h-full px-10 my-20 lg:px-16 lg:my-0">
-                    <section class="mx-auto container pt-24 pb-6">
+                <div class="relative flex flex-col items-start justify-start w-full h-full px-10 lg:px-16">
+                    <section class="mx-auto container  pb-6">
                         <div class="top mx-auto">
-                            <h1 class="font-poppins  {titleClass} font-extrabold text-[color:var(--color-text)]">{post.title}</h1>
-                            <h2 class="py-6 font-dm italic font-bold text-3xl">{post.author}</h2>
-                            <hr class="border-b-[1px] my-4 border-[color:var(--color-accent)] w-full" />
+                            <img class="py-4 w-1/2 mx-auto" src="/assets/poetry.png" alt={post.title} />
+                            <h1 class="font-poppins  {titleClass} font-extrabold text-center py-6 text-[color:var(--color-text)]">{post.title}</h1>
+                            <h2 class="pb-6 font-libre tracking-wide text-center text-xl">{post.author}</h2>
+                            <img src="/assets/bottom.png" class="w-1/3 mx-auto" alt={post.title} />
                         </div>
                         <div class="bottom">
                             <!-- <img class="w-full opacity-30" src="/assets/topper.png" alt={post.title} /> -->

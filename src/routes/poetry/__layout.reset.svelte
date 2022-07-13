@@ -8,9 +8,9 @@
   
   </script>
   
-  <main class="bg-[color:var(--color-background)] px-6 max-w-5xl mx-auto" id="content">
+  <main class="bg-[color:var(--color-background)] px-6 w-full" id="content">
     <Meta/>
-   <Menu/>
+   <div class="mx-auto"><Menu/></div>
     <slot />
     <Footer/>
   </main>

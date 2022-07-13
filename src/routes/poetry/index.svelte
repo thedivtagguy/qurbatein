@@ -30,7 +30,7 @@
     export let post;
   </script>
   <Meta />
-  <main class="max-w-5xl mx-auto">
+  <main class="mx-auto">
       {#if post}
       <svelte:component this={post}/>
       {:else}
