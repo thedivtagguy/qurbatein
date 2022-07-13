@@ -43,12 +43,17 @@ console.log(post);
         titleClass = "small-text";
     }
 </script>
-
+{#if post.title != "404"}
 <main>
-<section class="mx-auto w-2/3 pt-24 pb-6">
-<h1 class="font-poppins  {titleClass} font-extrabold text-[color:var(--color-text)]">{post.title}</h1>
-<h2 class="py-6 font-dm italic font-bold text-3xl">{post.author}</h2>
-<hr class="border-b-[1px] my-4 border-[color:var(--color-accent)] w-full" />
+<section class="mx-auto container w-4/5 pt-24 pb-6">
+<div class="top mx-auto">
+    <h1 class="font-poppins  {titleClass} font-extrabold text-[color:var(--color-text)]">{post.title}</h1>
+    <h2 class="py-6 font-dm italic font-bold text-3xl">{post.author}</h2>
+    <hr class="border-b-[1px] my-4 border-[color:var(--color-accent)] w-full" />
+</div>
+<div class="bottom">
+    <!-- <img class="w-full opacity-30" src="/assets/topper.png" alt={post.title} /> -->
+</div>
 </section>
 
 <section class="mx-auto w-2/3">
@@ -90,13 +95,20 @@ console.log(post);
 
 
 </main>
+{:else}
+<main>
+<section class="mx-auto container w-4/5 pt-24 pb-6">
+    Page not found
+</section>
+</main>
+{/if}
 
-<style global>
-    .large-text {
+<style>
+    :global(.large-text) {
         @apply text-8xl;
     }
 
-    .small-text {
+    :global(.small-text) {
         @apply text-9xl;
     }
 

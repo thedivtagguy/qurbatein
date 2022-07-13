@@ -13,7 +13,7 @@
         <div class="flex-1 max-w-4xl mx-auto p-8">
           <ul class="grid grid-cols-6 gap-8">
               <li class="col-span-6 md:col-span-2 h-56 border-r-2 border-b-2 border-black hover-content">
-                <a href="/articles/desiring-delhi">
+                <a href="/poetry/{poetry[0].slug}">
                 <div class="h-24 p-8">
                   <h3 class="font-libre italic text-center font-bold text-2xl">{poetry[0].title}</h3>
                   <hr class="divider">

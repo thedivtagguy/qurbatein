@@ -59,7 +59,7 @@
             <div class="grid justify-center items-center grid-cols-2">
                 <div class="h-[300px]"></div>
                 <div class="h-[300px] p-8">
-                    <img src="/assets/photoInset.jpg" width="500" alt="Inset">
+                    <!-- <img src="/assets/photoInset.jpg" width="500" alt="Inset"> -->
                 </div>
                 <div class="h-[380px] border-t-2 border-black border-r-2 p-12 flex justify-end items-center bg-[color:#e3d5ca]">
                     <h2 class="text-xl font-cormorant  font-black italic leading-10 tracking-tight text-left text-[color:var(--color-text)] md:text-right sm:leading-none md:text-6xl lg:text-[10rem]">Photo<br>Essays</h2>

@@ -4,16 +4,16 @@
     const article = content.filter(item => item.category === "article")
   </script>
   
-  <section class="grid min-h-[50vh] py-28 px-24 grid-cols-8 gap-8 justify-end items-start">
-      <div class="col-span-3  h-full">
-          <h2 class="text-xl font-cormorant  font-black italic leading-10 tracking-tight text-left text-[color:var(--color-text)] md:text-center sm:leading-none md:text-6xl lg:text-[10rem]">Articles</h2>
+  <section class="lg:grid lg:min-h-[50vh] py-12 lg:py-28 lg:px-24 lg:grid-cols-8 gap-8 justify-end items-start">
+      <div class="col-span-3  px-6 h-full">
+          <h2 class="font-cormorant  font-black italic leading-10 tracking-tight text-left text-[color:var(--color-text)] md:text-center sm:leading-none text-6xl md:text-6xl lg:text-[10rem]">Articles</h2>
       </div>
       <div class=" col-span-5 flex items-center ">
           <div class="flex-1 max-w-4xl mx-auto p-8">
             <ul class="grid grid-cols-6 gap-8">
                 {#each article as item, i}
 
-                <li class="col-span-6 border-t-[3px] my-4 border-black">
+                <li class="col-span-6 border-t-[3px] lg:my-4 border-black">
                     <a href="/articles/{item.slug}" class="block hover:text-[color:var(--color-text)]">
 
                     <div class="flex py-4 justify-start gap-6">
@@ -21,7 +21,7 @@
                             <span class="text-xl"><span class="font-bold">[</span>{i + 1}<span class="font-bold"> ]</span>
                         </div>
                         <div class="flex-1">
-                                <h3 class="text-2xl font-mono hover:underline hover:cursor-pointer ">{item.title}</h3>
+                                <h3 class="lg:text-2xl text-xl font-mono hover:underline hover:cursor-pointer ">{item.title}</h3>
                         </div>
                         <div>
                             <span class="text-sm font-mono">{item.author}</span>

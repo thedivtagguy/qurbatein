@@ -12,4 +12,20 @@ module.exports = [
     id: "1T4LU39d8qtCSnj9e2_k3tY4hY5CsLufP",
     filepath: "src/data/posts/geographies-of-intimacy-in-hyderabad.json"
   },
+  {
+    id: "12WJEIw1AHNHsA65G39xEPOtumhSLHmMQ",
+    filepath: "src/data/posts/habits.json"
+  },
+  {
+    id: "1D00TAgEzBgyYwNZFOXpD6hjVBGBeZAK0",
+    filepath: "src/data/posts/metro-nome-love.json"
+  },
+  {
+    id: "1yixoNuC8B2Yug7Y46fbh446jPb77zln4",
+    filepath: "src/data/posts/arrival.json"
+  },
+  {
+    id: "15jxs093tGohTezZ1AFlje9QUsr34zlFiIgRRWcLcKOI",
+    filepath: "src/data/posts/after-maidan-garhi.json"
+  }
 ];
