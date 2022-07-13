@@ -45,7 +45,7 @@ console.log(post);
 </script>
 
 
-
+{#if post.title != "404"}
 
 
 <!-- Section 1 -->
@@ -88,7 +88,13 @@ console.log(post);
     </div>
 </section>
 
-
+{:else}
+<main>
+<section class="mx-auto container w-4/5 pt-24 pb-6">
+    Page not found
+</section>
+</main>
+{/if}
 
 <style>
     :global(.large-text) {
