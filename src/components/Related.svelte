@@ -19,7 +19,7 @@
                     <div class="p-6 border-2 hover:cursor-pointer border-[color:var(--color-text)]">
                         <div class="top mx-auto">
                             <h1 class="font-poppins text-3xl italic font-bold text-left py-6 text-[color:var(--color-text)]">{item.title}</h1>
-                            <h2 class="pb-6 font-libre tracking-wide text-left text-xl">{item.author}</h2>
+                            <h2 class="pb-6 font-libre tracking-wide text-left text-md">{item.author}</h2>
                         </div>
                     </div>
                 </a>
