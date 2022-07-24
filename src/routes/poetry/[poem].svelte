@@ -43,20 +43,20 @@ export const prerender = true;
 
 
 <!-- Section 1 -->
-<section class="lg;w-4/5 mx-auto lg:py-2">
+<section class="lg;w-4/5 mx-auto px-4 lg:py-2">
     {#if post.multiplePoems == "true"}
     
     <!-- Section 1 -->
-    <section class="py-8 leading-7 text-gray-900 sm:py-12">
-        <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
+    <section class="lg:py-8 py-8 leading-7 text-gray-900 sm:py-12">
+        <div class="max-w-6xl px-4 mx-auto border-solid lg:px-12">
             <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
                 <div class="box-border flex-1 text-center border-solid sm:text-left">
                     <h2 class="m-0 text-3xl font-semibold leading-tight tracking-tight text-left text-black border-0 font-sans border-gray-200 sm:text-4xl">
                     A Collection by <span class="font-cormorant italic">{post.author}</span>
                     </h2>
-                   <div class="flex py-2 gap-6">
+                   <div class="flex py-2 gap-1 lg:gap-6">
                     {#each post.poems as poem}
-                    <p class="text-black text-base font-semibold ">{poem.title}</p> {#if poem != post.poems[post.poems.length - 1] }<span class="text-gray-600">/</span> {/if}
+                    <p class="text-black lg:text-base text-sm lg:text- font-semibold ">{poem.title}</p> {#if poem != post.poems[post.poems.length - 1] }<span class="text-gray-600">/</span> {/if}
                     {/each}
                     </div>
                 </div>
@@ -66,7 +66,7 @@ export const prerender = true;
 
     {#each post.poems as poem, i}
     <div id={convertToSlug(poem.title)} class="mx-auto w-full {i == post.poems.length - 1 ? '' :  'border-b-2'} py-8">
-        <div class="flex flex-col lg:flex-row">
+        <div class="flex px-4 flex-col lg:flex-row">
             <div class="relative w-full bg-cover lg:w-6/12 xl:w-7/12 ">
                 <div class="relative flex flex-col items-start justify-start w-full h-full px-2 lg:px-16">
                     <section class="mx-auto container  pb-6">
@@ -102,15 +102,15 @@ export const prerender = true;
     {:else}
 
     
-    <div class="mx-auto lg:py-20 w-full">
-        <div class="flex flex-col px-16  lg:flex-row">
+    <div class="mx-auto py-12 lg:py-20 w-full">
+        <div class="flex flex-col  lg:flex-row">
             <div class="relative w-full bg-cover lg:w-6/12 xl:w-7/12 ">
                 <div class="relative flex flex-col items-start justify-start w-full h-full">
                     <section class="mx-auto container  pb-6">
                         <div class="top mx-auto">
                             <img class="py-4 w-1/2 mx-auto" src="/assets/poetry.png" alt={post.title} />
                             <h1 class="font-poppins  {post.title.length > 15 ? 'large-text' : 'small-text'} font-extrabold text-center  text-[color:var(--color-text)]">{post.title}</h1>
-                            <h2 class="py-6 font-libre tracking-wide text-center text-xl">{post.author}</h2>
+                            <h2 class="lg:py-6  py-2 font-libre tracking-wide text-center text-xl">{post.author}</h2>
                             <img src="/assets/bottom.png" class="w-1/3 mx-auto" alt={post.title} />
                         </div>
                         <div class="bottom">
@@ -119,7 +119,7 @@ export const prerender = true;
                         </section>
                 </div>
             </div>
-            <div class="w-full px-8 lg:w-6/12 xl:w-5/12">
+            <div class="w-full px-6 lg:w-6/12 xl:w-5/12">
                 {#each post.blocks as block}
                     {#if block.Type === 'text'}
                         <BodyText text ={block.Text}/>
@@ -145,7 +145,7 @@ export const prerender = true;
     }
 
     :global(.small-text) {
-        @apply text-8xl;
+        @apply text-7xl;
     }
     
 

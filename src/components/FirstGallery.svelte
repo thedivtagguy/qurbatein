@@ -1,8 +1,8 @@
 
-<main class="flex px-8 bg-[color:#F5EBE0] h-1/2 justify-between items-center    w-full mx-auto text-gray-600 body-font">
+<main class="flex lg:flex-row flex-col px-8 bg-[color:#F5EBE0] h-1/2 justify-between items-center    w-full mx-auto text-gray-600 body-font">
 
 <!-- Section 1 -->
-<section class="py-20 px-20 ">
+<section class="py-20 lg:px-20 ">
   <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <h2 class="text-3xl font-cormorant font-bold tracking-tight text-gray-900 sm:text-4xl md:text-7xl xl:text-7xl">
          A Nice Headline Fits Here
@@ -14,8 +14,8 @@
   </div>
 </section>
 
-  <section class="px-8 bg-[color:#F5EBE0] h-1/2    w-full mx-auto text-gray-600 body-font ">
-    <div class="justify-items-center w-4/5 items-center px-5 py-24 mx-auto flex">
+  <section class="bg-[color:#F5EBE0] h-1/2  py-4  w-full mx-auto text-gray-600 body-font ">
+    <div class="justify-items-center lg:w-4/5 items-center px-5 py-24 mx-auto flex">
       <div class="flex justify-items-center items-center  md:-m-2 -m-1">
         <div class="flex justify-around -mt-[160px]  items-center flex-wrap ">
           <div class="md:p-2 p-1 w-1/2">
@@ -35,6 +35,6 @@
 
 <style>
   img {
-    filter: sepia(0.7);
+    filter: grayscale(0.9)  sepia(0.9) contrast(1.2) brightness(0.8);
   }
 </style>

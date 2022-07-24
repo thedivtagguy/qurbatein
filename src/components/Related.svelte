@@ -10,16 +10,16 @@
     const relatedItems3 = relatedItems.slice(0, number);
 
 </script>
-<section class="mx-auto max-w-5xl py-8">
+<section class="mx-auto px-8 max-w-5xl py-8">
     <h4 class="font-dm font-bold pb-4 text-4xl border-b border-[color:var(--color-text)] my-8 ">Read More</h4>
     
-    <section class="flex justify-start gap-8 items-center">
+    <section class="flex lg:flex-row flex-col justify-start gap-8 items-start lg:items-center">
         {#each relatedItems3 as item}
                 <a href="/{related}/{item.slug}"  rel="external">
-                    <div class="p-6 border-2 hover:cursor-pointer border-[color:var(--color-text)]">
+                    <div class="lg:p-6 p-4 border-2 hover:cursor-pointer border-[color:var(--color-text)]">
                         <div class="top mx-auto">
-                            <h1 class="font-poppins text-3xl italic font-bold text-left py-6 text-[color:var(--color-text)]">{item.title}</h1>
-                            <h2 class="pb-6 font-libre tracking-wide text-left text-md">{item.author}</h2>
+                            <h1 class="font-poppins text-xl  lg:text-3xl italic font-bold text-left py-2 lg:py-6 text-[color:var(--color-text)]">{item.title}</h1>
+                            <h2 class="lg:pb-6 font-libre tracking-wide text-left text-sm lg:text-md">{item.author}</h2>
                         </div>
                     </div>
                 </a>

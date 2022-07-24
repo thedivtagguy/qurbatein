@@ -20,7 +20,9 @@ module.exports = {
     purgeLayersByDefault: true,
     removeDeprecatedGapUtilities: true
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
   purge: {
     content: ["./src/**/*.svelte"],
     enabled: production // disable purge in dev

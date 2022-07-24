@@ -5,11 +5,11 @@
     console.log(photoEssay)
   </script>
   
-  <section class="grid bg-[color:#e3d5ca] min-h-[50vh] py-20 px-24 grid-cols-8 gap-8 justify-between items-start">
+  <section class="grid bg-[color:#e3d5ca] lg:min-h-[50vh] grid-cols-1 py-20 px-6 lg:px-24 lg:grid-cols-8 gap-8 justify-between items-start">
       <div class="col-span-4  h-full">
-        <div class=" col-span-5 flex items-center ">
+        <div class=" col-span-5 flex lg:flex-row flex-col items-center ">
               <ul class="grid grid-cols-6 gap-6 w-4/5">
-                <li class="col-span-6 border-r-2 p-4 hover-content border-black">
+                <li class="lg:col-span-6 col-span-3 border-r-2 lg:p-4 hover-content border-black">
                     <blockquote class="flex image1   h-[180px] overlay items-center justify-between w-full col-span-1 p-4">
                         <div class="flex  flex-col pr-10">
                             <div class="relative pl-12">
@@ -23,7 +23,7 @@
                         </div>
                     </blockquote>
                  </li>
-                 <li class="col-span-6 border-l-2 p-4 hover-content border-black">
+                 <li class="lg:col-span-6 col-span-3 border-l-2 p-4 hover-content border-black">
                     <blockquote class="flex image2   h-[180px] overlay items-center justify-between w-full col-span-1 p-4">
                         <div class="flex  flex-col pr-10">
                             <div class="relative pl-12">
@@ -37,7 +37,7 @@
                         </div>
                     </blockquote>
                  </li>
-                 <li class="col-span-6 border-r-2   p-4 hover-content border-black">
+                 <li class="lg:col-span-6 col-span-3 border-r-2   p-4 hover-content border-black">
                     <blockquote class="flex image3   h-[180px] overlay items-center justify-between w-full col-span-1 p-4">
                         <div class="flex  flex-col pr-10">
                             <div class="relative pl-12">
@@ -61,7 +61,7 @@
                 <div class="h-[300px] p-8">
                     <!-- <img src="/assets/photoInset.jpg" width="500" alt="Inset"> -->
                 </div>
-                <div class="h-[380px] border-t-2 border-black border-r-2 p-12 flex justify-end items-center bg-[color:#e3d5ca]">
+                <div id="textbox" class="h-[380px] border-t-2 z-10 border-black border-r-2 p-12 flex justify-end items-center bg-[color:#e3d5ca]">
                     <h2 class="text-xl font-cormorant  font-black italic leading-10 tracking-tight text-left text-[color:var(--color-text)] md:text-right sm:leading-none md:text-6xl lg:text-[10rem]">Photo<br>Essays</h2>
 
                 </div>
@@ -75,15 +75,40 @@
   
   
   <style>
-  
+
   #photo-essay {
-    background-image: url("/assets/photoessay.jpg");
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position-x: center;
+    position: relative;
+	width: 1000px;
+	height: 800px;
+	color: #333;
+	text-align: center;
+	padding-top: 20%;
+	font-size: 20px;
+  }
+
+  #photo-essay::before {
+    content: " ";
+	position: absolute;
+	left: 20%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background-image: url("/assets/photoessay.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+    filter: grayscale(0.9)  sepia(0.9) contrast(1.2) brightness(0.8);
+	z-index: 0;
+  }
+
+  #textbox {   
+    filter: none;
+    margin-top: -100px;
   }
 
   .image1{
+        filter: grayscale(0.9)  sepia(0.9) contrast(1.2) brightness(0.8);
+
     background-image: url("/assets/image1.jpg") , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-blend-mode: overlay;
     background-size: cover;
@@ -92,6 +117,8 @@
   }
 
   .image2{
+        filter: grayscale(0.9)  sepia(0.9) contrast(1.2) brightness(0.8);
+
     background-image: url("/assets/image2.jpg") , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-blend-mode: overlay;
     background-size: cover;
@@ -101,6 +128,8 @@
   }
 
     .image3{
+            filter: grayscale(0.9)  sepia(0.9) contrast(1.2) brightness(0.8);
+
         background-image: url("/assets/image3.jpg") , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
         background-blend-mode: overlay;
         background-size: cover;

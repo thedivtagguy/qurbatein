@@ -60,7 +60,7 @@ import Bio from "$components/Blocks/Bio.svelte";
 </div>
 </section>
 
-<section class="mx-auto w-2/3">
+<section class="mx-auto px-6 lg:w-2/3">
     <!-- {#if post.quote}
     <blockquote class="text-center bg-[color:var(--color-primary)] text-white p-8 my-8">
         <p class="text-left italic text-xl ">{post.quote.text}</p>

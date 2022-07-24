@@ -5,9 +5,9 @@
   console.log(poetry)
 </script>
 
-<section class="grid min-h-[50vh] py-28 px-24 grid-cols-8 gap-8 justify-end items-start">
+<section class="grid min-h-[50vh] py-12 lg:py-28 lg:px-24 px-4 lg:grid-cols-8 gap-8 justify-end items-start">
     <div class="col-span-3  h-full">
-        <h2 class="text-xl font-cormorant  font-black italic leading-10 tracking-tight text-left text-[color:var(--color-text)] md:text-center sm:leading-none md:text-6xl lg:text-[10rem]">Poetry</h2>
+        <h2 class="text-7xl font-cormorant  font-black italic leading-10 tracking-tight text-center text-[color:var(--color-text)] md:text-center sm:leading-none md:text-6xl lg:text-[10rem]">Poetry</h2>
     </div>
     <div class=" col-span-5 flex items-center ">
         <div class="flex-1 max-w-4xl mx-auto p-8">
