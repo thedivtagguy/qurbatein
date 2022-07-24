@@ -1,6 +1,6 @@
 <nav class=" bg-[color:#eae9e3]  px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
     <div class="container flex flex-wrap justify-around items-center mx-auto">
-        <a href="/" class="inline-block ">
+        <a href="/" rel="external" class="inline-block ">
             <img src="/assets/csgs-logo.png" class="p-2" width="80" alt="Main Logo">
          </a>
       <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
