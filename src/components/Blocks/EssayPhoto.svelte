@@ -6,3 +6,10 @@
     <img src="/images/{src}" alt={caption} />
     <p class="caption text-base py-2 italic">{caption}</p>
 </section>
+
+<style>
+    img {
+        width: 896px;
+        height: auto;
+    }
+</style>
