@@ -12,6 +12,6 @@
       <Menu/>
   <main class="bg-[color:var(--color-background)] max-w-5xl mx-auto" id="content">
     <slot />
-    <Related number="2" related="articles"/>
+    <Related number="2" related="prose"/>
     <Footer/>
   </main>

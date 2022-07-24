@@ -103,14 +103,14 @@ export const prerender = true;
 
     
     <div class="mx-auto lg:py-20 w-full">
-        <div class="flex flex-col lg:flex-row">
+        <div class="flex flex-col px-16  lg:flex-row">
             <div class="relative w-full bg-cover lg:w-6/12 xl:w-7/12 ">
-                <div class="relative flex flex-col items-start justify-start w-full h-full px-10 lg:px-16">
+                <div class="relative flex flex-col items-start justify-start w-full h-full">
                     <section class="mx-auto container  pb-6">
                         <div class="top mx-auto">
                             <img class="py-4 w-1/2 mx-auto" src="/assets/poetry.png" alt={post.title} />
                             <h1 class="font-poppins  {post.title.length > 15 ? 'large-text' : 'small-text'} font-extrabold text-center  text-[color:var(--color-text)]">{post.title}</h1>
-                            <h2 class="pb-6 font-libre tracking-wide text-center text-xl">{post.author}</h2>
+                            <h2 class="py-6 font-libre tracking-wide text-center text-xl">{post.author}</h2>
                             <img src="/assets/bottom.png" class="w-1/3 mx-auto" alt={post.title} />
                         </div>
                         <div class="bottom">
@@ -119,7 +119,7 @@ export const prerender = true;
                         </section>
                 </div>
             </div>
-            <div class="w-full lg:w-6/12 xl:w-5/12">
+            <div class="w-full px-8 lg:w-6/12 xl:w-5/12">
                 {#each post.blocks as block}
                     {#if block.Type === 'text'}
                         <BodyText text ={block.Text}/>
@@ -145,7 +145,7 @@ export const prerender = true;
     }
 
     :global(.small-text) {
-        @apply text-9xl;
+        @apply text-8xl;
     }
     
 

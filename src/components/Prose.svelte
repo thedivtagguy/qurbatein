@@ -17,25 +17,34 @@
 
             <div class="items-center  justify-center w-full mt-12 mb-4 lg:flex">
                 <div class="flex flex-col hover:bg-[color:var(--color-text)]  hover:cursor-pointer hover:text-[color:var(--color-background)] items-start justify-start w-full h-auto px-0 mx-0 mb-12  border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:border-[color:var(--color-text)]">
+                    <a href="/prose/{prose[0].slug}">
+
                     <div class="flex flex-col items-center h-[300px] justify-evenly">
                         <h3 class="font-bold text-center font-dm  text-5xl capitalize ">{prose[0].title}</h3>
                         <h4 class="font-bold text-center font-mono  text-xl capitalize ">{prose[0].author}</h4>
                     </div>
+                    </a>
                    
                 </div>
-                <div class="flex flex-col hover:bg-[color:var(--color-text)]  hover:cursor-pointer hover:text-[color:var(--color-background)] items-start border-l border-r justify-start w-full h-auto px-0 mx-0 mb-12  border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:border-[color:var(--color-text)]">
-                    <div class="flex flex-col items-center h-[300px] justify-evenly">
-                        <h3 class="font-bold text-center font-dm  text-5xl capitalize ">{prose[1].title}</h3>
-                        <h4 class="font-bold text-center font-mono  text-xl capitalize ">{prose[1].author}</h4>
-                    </div>
-                   
+                    <div class="flex flex-col hover:bg-[color:var(--color-text)]  hover:cursor-pointer hover:text-[color:var(--color-background)] items-start border-l border-r justify-start w-full h-auto px-0 mx-0 mb-12  border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:border-[color:var(--color-text)]">
+                        <a href="/prose/{prose[1].slug}">
+
+                        <div class="flex flex-col items-center h-[300px] justify-evenly">
+                            <h3 class="font-bold text-center font-dm  text-5xl capitalize ">{prose[1].title}</h3>
+                            <h4 class="font-bold text-center font-mono  text-xl capitalize ">{prose[1].author}</h4>
+                        </div>          
+                        
+                        </a>
                 </div>
+
                 <div class="flex flex-col hover:bg-[color:var(--color-text)]  hover:cursor-pointer hover:text-[color:var(--color-background)] items-start justify-start w-full h-auto px-0 mx-0 mb-12  border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:border-[color:var(--color-text)]">
+                    <a href="/prose/{prose[2].slug}">
+
                     <div class="flex flex-col items-center h-[300px] justify-evenly">
                         <h3 class="font-bold text-center font-dm  text-5xl capitalize ">{prose[2].title}</h3>
                         <h4 class="font-bold text-center font-mono  text-xl capitalize ">{prose[2].author}</h4>
                     </div>
-                   
+                   </a> 
                 </div>
             </div>
         </div>

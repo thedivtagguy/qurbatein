@@ -5,11 +5,11 @@ module.exports = [
     filepath: "src/data/content.csv"
   },
   {
-    id: "1VAVuNJLOnqc_wD92jESoOyfqzWM98W7A",
+    id: "1UnHWVpQ1Um6WCXcJylJ8QDvAAiJPwyYrIatKZs4jDlw",
     filepath: "src/data/posts/desiring-delhi.json"
   },
   {
-    id: "1T4LU39d8qtCSnj9e2_k3tY4hY5CsLufP",
+    id: "1MuKc46BnpBTf8N3gfl0cpgSJp6At141oDaicpTrxhsE",
     filepath: "src/data/posts/geographies-of-intimacy-in-hyderabad.json"
   },
   {
@@ -27,5 +27,25 @@ module.exports = [
   {
     id: "1EOyZMpCVQPCRsi9s2GQj1pTV7GGFl6AJKMgeLz_pyxk",
     filepath: "src/data/posts/metro-nome-love.json",
+  },
+  {
+    id: "1ZyMR6rbkRWn5ak8zksXcT3PW_GiVTf2e_J2YWl-yHPg",
+    filepath: "src/data/posts/red-dress-wali-ladki.json",
+  },
+  {
+    id: "1NGsnXohQfboSUJA8Bq1-VR8e6Hoj8SgFsUUPGd6ug7Y",
+    filepath: "src/data/posts/same-sex-desire-in-early-modern-india.json",
+  },
+  {
+    id: "13k7dImSQ-NU84Q7wCJs-bPgbAUT1OQBqS4PRyos1BP4",
+    filepath: "src/data/posts/tiger-learns-to-leap.json"
+  },
+  {
+    id: "15QbVCqWxm1IsBBAA6JsaNPwXsZayzPe7p5UAsXuF45w",
+    filepath: "src/data/posts/tu-kaisi-rail-si.json"
+  },
+  {
+    id: "1epvkeBXLqRkkzZLEquf5sLiJF-jBTwx_3AS-O5xAxq0",
+    filepath: "src/data/posts/sex-and-the-city.json"
   }
 ];

@@ -334,6 +334,18 @@ p {
   --tw-text-opacity: 1;
   color: rgb(98 60 234 / var(--tw-text-opacity));
 }
+.\!link {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+}
+.\!link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(98 60 234 / var(--tw-text-opacity));
+}
 body{
     background-color: var(--color-background);
     /* Smooth scroll */
@@ -485,6 +497,14 @@ body{
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
@@ -819,6 +839,14 @@ body{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
 .bg-\[color\:\#F5EBE0\] {
   --tw-bg-opacity: 1;
   background-color: rgb(245 235 224 / var(--tw-bg-opacity));
@@ -994,6 +1022,12 @@ body{
 .pt-24 {
   padding-top: 6rem;
 }
+.pb-\[\$\{breaks\}\] {
+  padding-bottom: ${breaks};
+}
+.pt-6 {
+  padding-top: 1.5rem;
+}
 .text-left {
   text-align: left;
 }
@@ -1079,6 +1113,9 @@ body{
 }
 .font-medium {
   font-weight: 500;
+}
+.font-light {
+  font-weight: 300;
 }
 .capitalize {
   text-transform: capitalize;

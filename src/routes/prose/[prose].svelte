@@ -5,9 +5,9 @@ export const prerender = true;
       const stories = content;
 	export async function load({ page }) {
 		try {
-			const post = await import(`../../data/posts/${page.params.article}.json`);
+			const post = await import(`../../data/posts/${page.params.prose}.json`);
 			// Filter stories by slug
-			const story = stories.filter(story => story.slug === page.params.article)[0];
+			const story = stories.filter(story => story.slug === page.params.prose)[0];
 			// Combine data
 			const data = { ...post, ...story };
 			return {
@@ -32,7 +32,6 @@ export const prerender = true;
     import BodyText from "$components/Blocks/BodyText.svelte";
     import ArticleImage from "$components/Blocks/ArticleImage.svelte";
     import Pullquote from "$components/Blocks/Pullquote.svelte";
-import Bio from "$components/Blocks/Bio.svelte";
     export let post;
     console.log(post);
     let titleClass;
@@ -82,13 +81,14 @@ import Bio from "$components/Blocks/Bio.svelte";
     {#if block.Type == "pullquote"}
        <Pullquote text={block.Text}/>
     {/if}
-
-    {#if block.Type == "Bio"}
-        <Bio text={block.Text} />
-    {/if}
     {/each}
 
-
+    <!-- {#if post.bio}
+    <div class="text-xl mt-8 bg-[color:var(--color-secondary)] text-white p-8">
+        <h4 class="font-bold text-2xl pb-4">About the Author</h4>
+        <p>{@html marked.parse(post.bio)}</p>
+    </div>
+    {/if} -->
 
     {#if post.footnotes}
     <div class="py-8">
