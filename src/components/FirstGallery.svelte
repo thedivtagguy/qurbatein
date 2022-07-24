@@ -19,16 +19,22 @@
       <div class="flex justify-items-center items-center  md:-m-2 -m-1">
         <div class="flex justify-around -mt-[160px]  items-center flex-wrap ">
           <div class="md:p-2 p-1 w-1/2">
-            <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/500x300">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/gallery-1.jpg">
           </div>
           <div class="md:p-2 p-1 w-2/5">
-            <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/501x301">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/gallery-2.jpg">
           </div>
           <div class="md:p-2 p-1 w-full">
-            <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/600x360">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/gallery-3.jpg">
           </div>
         </div>
       </div>
     </div>
   </section>
 </main>
+
+<style>
+  img {
+    filter: sepia(0.7);
+  }
+</style>
