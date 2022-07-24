@@ -13,7 +13,7 @@
         <div class="flex-1 max-w-4xl mx-auto p-8">
           <ul class="grid grid-cols-6 gap-8">
               <li class="col-span-6 md:col-span-2 h-56 border-r-2 border-b-2 border-black hover-content">
-                <a href="/poetry/{poetry[0].slug}" rel="external">
+                <a href="/poetry/{poetry[0].slug}">
                 <div class="h-24 p-8">
                   <h3 class="font-libre italic text-center font-bold text-2xl">{poetry[0].title}</h3>
                   <hr class="divider">
@@ -22,7 +22,7 @@
                 </a>
               </li>
             <li class="col-span-6 md:col-span-4 bg-[color:var(--color-primary)] h-56 hover:border-2 hover-content">
-              <a href="/poetry/{poetry[2].slug}" rel="external">
+              <a href="/poetry/{poetry[2].slug}" >
               <div class="h-24 p-8 text-white">
                 <h3 class="font-mono text-center font-semibold text-5xl">{poetry[2].title}</h3>
                 <hr class="divider-white ">
@@ -31,7 +31,7 @@
               </a>
              </li>
             <li class="col-span-6 md:col-span-3 h-56 hover-content">
-              <a href="/poetry/{poetry[3].slug}" rel="external">
+              <a href="/poetry/{poetry[3].slug}" >
               <div class="h-24 p-8">
                 <h3 class="font-libre italic  text-center font-semibold text-5xl">{poetry[3].title}</h3>
                 <hr class="divider">
@@ -40,7 +40,7 @@
               </a>
              </li>
              <li class="col-span-6 md:col-span-3 border-2 border-black h-56 hover-content">
-              <a href="/poetry/{poetry[1].slug}" rel="external">
+              <a href="/poetry/{poetry[1].slug}">
               <div class="h-24 p-8">
                 <h3 class="font-libre  italic text-center font-semibold text-5xl">{poetry[1].title}</h3>
                 <hr class="divider">
