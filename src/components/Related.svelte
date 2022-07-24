@@ -15,7 +15,7 @@
     
     <section class="flex justify-start gap-8 items-center">
         {#each relatedItems3 as item}
-                <a href="/{related}/{item.slug}">
+                <a href="/{related}/{item.slug}"  rel="external">
                     <div class="p-6 border-2 hover:cursor-pointer border-[color:var(--color-text)]">
                         <div class="top mx-auto">
                             <h1 class="font-poppins text-3xl italic font-bold text-left py-6 text-[color:var(--color-text)]">{item.title}</h1>
