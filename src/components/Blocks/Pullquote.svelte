@@ -1,14 +1,17 @@
 <script>
     export let text;
-     
+    export let attribution = '';
     if (!text) {
         throw new Error(
             '"text" prop must be defined as a string'
         );
     }
 </script>
-<section class="pullquote border-t-2 border-gray-200 my-8 py-6 border-b-2">
+<section class="relative pullquote border-t-2 max-w-xl mx-auto border-gray-200 my-8 py-6 border-b-2">
    <p class="text-5xl italic font-cormorant font-bold text-left ">
         {text}
    </p>
 </section>
+<p class="text-right  text-md w-1/3 font-cormorant font-bold right-0 ">
+    {attribution}
+</p>

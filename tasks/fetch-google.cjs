@@ -39,6 +39,7 @@ const fetchGoogle = async ({ id, gid }) => {
       const file = `${CWD}/${d.filepath}`;
       
       fs.writeFileSync(file, str);
+      console.log(`Wrote ${file}`);
     } catch (err) {
       
     }

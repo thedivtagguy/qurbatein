@@ -12,14 +12,15 @@
                 <li class="lg:col-span-6 col-span-3 border-r-2 lg:p-4 hover-content border-black">
                     <blockquote class="flex image1   h-[180px] overlay items-center justify-between w-full col-span-1 p-4">
                         <div class="flex  flex-col pr-10">
-                            <div class="relative pl-12">
-                                <h3 class="mt-2 text-sm font-cormorant  font-bold italic text-white sm:text-base lg:text-4xl">{photoEssay[0].title}</h3>
-                            </div>
-    
-                            <h3 class="pl-12 mt-3 text-sm font-medium leading-5 text-white truncate sm:text-base ">
-                                {photoEssay[0].author}
-                            </h3>
-                            <p class="mt-1 text-sm leading-5 text-white truncate"></p>
+                            <a href="/photo-essay/{photoEssay[0].slug}">
+                                <div class="relative pl-12">
+                                    <h3 class="mt-2 text-sm font-cormorant  font-bold italic text-white sm:text-base lg:text-4xl">{photoEssay[0].title}</h3>
+                                </div>
+                                <h3 class="pl-12 mt-3 text-sm font-medium leading-5 text-white truncate sm:text-base ">
+                                    {photoEssay[0].author}
+                                </h3>
+                                <p class="mt-1 text-sm leading-5 text-white truncate"></p>
+                            </a>
                         </div>
                     </blockquote>
                  </li>
@@ -40,6 +41,7 @@
                  <li class="lg:col-span-6 col-span-3 border-r-2   p-4 hover-content border-black">
                     <blockquote class="flex image3   h-[180px] overlay items-center justify-between w-full col-span-1 p-4">
                         <div class="flex  flex-col pr-10">
+                            <a href="/photo-essay/{photoEssay[2].slug}">
                             <div class="relative pl-12">
                                 <h3 class="mt-2 text-sm font-cormorant  font-bold italic text-white sm:text-base lg:text-4xl">{photoEssay[2].title}</h3>
                             </div>
@@ -48,6 +50,7 @@
                                 {photoEssay[2].author}
                             </h3>
                             <p class="mt-1 text-sm leading-5 text-white truncate"></p>
+                            </a>
                         </div>
                     </blockquote>
                  </li>

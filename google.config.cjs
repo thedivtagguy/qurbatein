@@ -47,5 +47,13 @@ module.exports = [
   {
     id: "1epvkeBXLqRkkzZLEquf5sLiJF-jBTwx_3AS-O5xAxq0",
     filepath: "src/data/posts/sex-and-the-city.json"
+  },
+  {
+    id: "1XptrMJZZmvpB304wvyFIX2NAqCF_5oqQENkKZk1Pptk",
+    filepath: "src/data/posts/paradox-of-privacy.json"
+  },
+  {
+    id: "1V4Qbtt8XRWg9k9b_TGWFRYVAsW7OtLMPBG1UUDrlei0",
+    filepath: "src/data/posts/if-you-cannot-sleep.json"
   }
 ];
