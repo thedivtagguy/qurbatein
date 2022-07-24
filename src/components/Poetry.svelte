@@ -22,27 +22,31 @@
                 </a>
               </li>
             <li class="col-span-6 md:col-span-4 bg-[color:var(--color-primary)] h-56 hover:border-2 hover-content">
+              <a href="/poetry/{poetry[2].slug}">
               <div class="h-24 p-8 text-white">
                 <h3 class="font-mono text-center font-semibold text-5xl">{poetry[2].title}</h3>
                 <hr class="divider-white ">
                 <p class="text-center text-xl leading-10 tracking-tight text-white md:text-center sm:leading-none md:text-6xl lg:text-[1.5rem]">{poetry[2].author}</p>
-
               </div>
+              </a>
              </li>
             <li class="col-span-6 md:col-span-3 h-56 hover-content">
+              <a href="/poetry/{poetry[3].slug}">
               <div class="h-24 p-8">
                 <h3 class="font-libre italic  text-center font-semibold text-5xl">{poetry[3].title}</h3>
                 <hr class="divider">
                 <p class="text-center text-xl leading-10 tracking-tight text-[color:var(--color-text)] md:text-center sm:leading-none md:text-6xl lg:text-[1.5rem]">{poetry[3].author}</p>
-
               </div>
+              </a>
              </li>
              <li class="col-span-6 md:col-span-3 border-2 border-black h-56 hover-content">
+              <a href="/poetry/{poetry[1].slug}">
               <div class="h-24 p-8">
                 <h3 class="font-libre  italic text-center font-semibold text-5xl">{poetry[1].title}</h3>
                 <hr class="divider">
                 <p class="text-center text-xl leading-10 tracking-tight md:text-center sm:leading-none md:text-6xl lg:text-[1.5rem]">{poetry[1].author}</p>
               </div>
+              </a>
              </li>
           </ul>
         </div>

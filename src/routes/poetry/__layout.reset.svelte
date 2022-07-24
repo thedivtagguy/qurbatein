@@ -9,9 +9,9 @@
   
   </script>
   
-  <main class="bg-[color:var(--color-background)] px-6 w-full" id="content">
+  <main class="bg-[color:var(--color-background)] w-full" id="content">
     <Meta/>
-   <div class="mx-auto"><Menu/></div>
+   <div><Menu/></div>
     <slot />
     <Related related="poetry"/>
     <Footer/>

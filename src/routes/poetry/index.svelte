@@ -36,6 +36,6 @@
       {:else}
       hi
       {/if}
-      <Footer />
+ <Footer />
   </main>
   

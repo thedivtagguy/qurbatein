@@ -2,8 +2,8 @@
   import Menu from "$components/Menu.svelte";
 </script>
 <!-- Section 1 -->
-<section class="w-full px-6 pb-12 antialiased ">
-  <div class="mx-auto max-w-7xl">
+<section class="w-full  pb-12 antialiased ">
+  <div class="mx-auto">
     <Menu />
       <!-- Main Hero Content -->
       <div class="container max-w-lg px-4 py-32 mx-auto mt-px text-left md:max-w-none md:text-center">

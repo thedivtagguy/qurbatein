@@ -56,7 +56,7 @@ export const prerender = true;
                     </h2>
                    <div class="flex py-2 gap-6">
                     {#each post.poems as poem}
-                    <a href="#{convertToSlug(poem.title)}" class="text-black text-base font-semibold hover:text-purple-800 leading-6 hover:underline">{poem.title}</a> {#if poem != post.poems[post.poems.length - 1] }<span class="text-gray-600">/</span> {/if}
+                    <p class="text-black text-base font-semibold ">{poem.title}</p> {#if poem != post.poems[post.poems.length - 1] }<span class="text-gray-600">/</span> {/if}
                     {/each}
                     </div>
                 </div>
@@ -72,8 +72,7 @@ export const prerender = true;
                     <section class="mx-auto container  pb-6">
                         <div class="top mx-auto">
                             <img class="lg:py-4 w-1/2 lg:mx-auto" src="/assets/poetry.png" alt={poem.title} />
-                            <h1 class="font-poppins  {poem.title.length > 15 ? 'lg:large-text text-5xl' : 'small-text'} capitalize font-extrabold lg:w-2/3 text-left  xl:text-center mx-auto lg:text-center py-4 text-[color:var(--color-text)]">{poem.title}</h1>
-                            <h2 class="lg:pb-6 font-libre tracking-wide lg:text-center pb-4 text-xl">{i > 0 ? '' : post.author}</h2>
+                            <h1 class="font-poppins  {poem.title.length > 15 ? 'lg:large-text text-5xl' : 'small-text'} pb-8 capitalize font-extrabold lg:w-2/3 text-left  xl:text-center mx-auto lg:text-center py-4 text-[color:var(--color-text)]">{poem.title}</h1>
                             <img src="/assets/bottom.png" class="w-1/3 lg:mx-auto" alt={poem.title} />
                         </div>
                         <div class="bottom">

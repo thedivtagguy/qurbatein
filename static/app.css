@@ -844,6 +844,18 @@ body{
 .bg-\[color\:var\(--color-background\)\] {
   background-color: var(--color-background);
 }
+.bg-\[color\:\#e5d5c5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 213 197 / var(--tw-bg-opacity));
+}
+.bg-\[color\:\#fcecdb\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 236 219 / var(--tw-bg-opacity));
+}
+.bg-\[color\:\#eae9e3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 233 227 / var(--tw-bg-opacity));
+}
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -872,6 +884,9 @@ body{
 }
 .p-6 {
   padding: 1.5rem;
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .py-12 {
   padding-top: 3rem;

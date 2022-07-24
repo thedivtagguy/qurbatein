@@ -13,11 +13,19 @@ module.exports = [
     filepath: "src/data/posts/geographies-of-intimacy-in-hyderabad.json"
   },
   {
-    id: "12WJEIw1AHNHsA65G39xEPOtumhSLHmMQ",
+    id: "1K7fhIHNikjd_77jJGs9yrnkfEs85y6idTJ5o_gJVHmE",
     filepath: "src/data/posts/habits.json"
   },
   {
     id: "15jxs093tGohTezZ1AFlje9QUsr34zlFiIgRRWcLcKOI",
-    filepath: "src/data/posts/after-maidan-garhi.json"
+    filepath: "src/data/posts/after-maidan-garhi.json",
+  },
+  {
+    id: "1R3LKKytNfrcwzcB-1_c83bfQPqkSeUNViWaoDf02QUw",
+    filepath: "src/data/posts/arrival.json",
+  },
+  {
+    id: "1EOyZMpCVQPCRsi9s2GQj1pTV7GGFl6AJKMgeLz_pyxk",
+    filepath: "src/data/posts/metro-nome-love.json",
   }
 ];
