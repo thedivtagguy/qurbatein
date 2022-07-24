@@ -41,7 +41,6 @@ export const prerender = true;
 
 {#if post.title != "404"}
 
-
 <!-- Section 1 -->
 <section class="lg;w-4/5 mx-auto px-4 lg:py-2">
     {#if post.multiplePoems == "true"}
