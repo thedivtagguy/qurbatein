@@ -757,6 +757,18 @@ body{
 .mr-0 {
   margin-right: 0px;
 }
+.ml-auto {
+  margin-left: auto;
+}
+.mr-10 {
+  margin-right: 2.5rem;
+}
+.mr-80 {
+  margin-right: 20rem;
+}
+.mr-40 {
+  margin-right: 10rem;
+}
 .box-border {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1600,6 +1612,9 @@ body{
   }
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+  .lg\:mr-40 {
+    margin-right: 10rem;
   }
   .lg\:inline-block {
     display: inline-block;

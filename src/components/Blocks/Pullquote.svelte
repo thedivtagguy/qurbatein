@@ -9,9 +9,9 @@
 </script>
 <section class="relative pullquote border-t-2 max-w-xl mx-auto border-gray-200 my-8 py-6 border-b-2">
    <p class="text-5xl italic font-cormorant font-bold text-left ">
-        {text}
+        {@html text}
    </p>
 </section>
-<p class="text-right  text-md w-1/3 font-cormorant font-bold right-0 ">
+<p class="text-right  text-md lg:w-1/3 font-cormorant font-bold  ml-auto lg:mr-40 ">
     {attribution}
 </p>
