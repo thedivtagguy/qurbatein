@@ -3,6 +3,10 @@
 
 @layer base {
   /* custom CSS goes here */
+  html {
+    scroll-behavior: smooth;
+
+  }
   p {
     font-size: 18px;
     font-family: 'Source Sans Pro', 'sans-serif';
@@ -15,6 +19,7 @@
 
    body{
     background-color: var(--color-background);
+    /* Smooth scroll */
    }
 
    .hover-content{
