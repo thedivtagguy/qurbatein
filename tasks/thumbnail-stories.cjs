@@ -34,7 +34,7 @@ function makeThumbnail(file) {
   try {
     for (let file of files) {
       await makeThumbnail(file);
-      console.log(`${file} done`);
+      
     }
   } catch (err) {
     console.error(err);

@@ -33,7 +33,7 @@ export const prerender = true;
     import ArticleImage from "$components/Blocks/ArticleImage.svelte";
     import Pullquote from "$components/Blocks/Pullquote.svelte";
     export let post;
-    console.log(post);
+    
     let titleClass;
 	// Calculate title length
     const titleLength = post.title.length;

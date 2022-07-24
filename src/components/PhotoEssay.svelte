@@ -2,7 +2,7 @@
     import content from "$data/content.csv"
     // Keep only content that has category "photo-essay"
     const photoEssay = content.filter(item => item.category === "photo essay")
-    console.log(photoEssay)
+    
   </script>
   
   <section class="grid bg-[color:#e3d5ca] lg:min-h-[50vh] grid-cols-1 py-20 px-6 lg:px-24 lg:grid-cols-8 gap-8 justify-between items-start">

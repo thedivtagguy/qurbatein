@@ -29,7 +29,7 @@ getfilelist.GetFileList(
       return;
     }
     const fileList = res.fileList.flatMap(({ files }) => files);
-    console.log(fileList);
+    
 
     const fileListString = fileList
       .map(

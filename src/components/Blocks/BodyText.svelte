@@ -2,7 +2,7 @@
      import { marked } from 'marked';
      export let text;
      export let breaks;
-    console.log(breaks);
+    
     if (!text)
         throw new Error(
         '"text" prop must be defined as a string'
