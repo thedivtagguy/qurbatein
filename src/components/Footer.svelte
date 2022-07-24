@@ -1,6 +1,5 @@
 <script>
   import storiesData from "$data/stories.csv";
-  import parseStories from "$utils/cleanStories";
   import wordmark from "$svg/wordmark.svg";
 
   export let keywords;

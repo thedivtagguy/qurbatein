@@ -1,4 +1,3 @@
-import { timeParse, timeFormat } from "d3";
 import filterStoryProps from "./filterStoryProps";
 
 const makeArray = (str) => {
