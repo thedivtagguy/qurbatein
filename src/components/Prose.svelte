@@ -5,10 +5,10 @@
   </script>
   
 <!-- Section 1 -->
-<section class="flex items-center border-2 lg:mx-auto mx-4 border-[color:var(--color-text)] justify-center max-w-7xl  ">
+<section class="flex items-center border-2 lg:mx-auto border-[color:var(--color-text)] justify-center max-w-8xl  ">
     <div class="px-16 py-12">
         <div class="container flex flex-col items-start mx-auto lg:items-center">
-            <h2 class="relative flex items-start justify-start w-full max-w-3xl text-6xl lg:text-9xl font-cormorant italic text-[color:var(--color-text)] font-bold lg:justify-center">
+            <h2 class="relative flex items-start justify-start w-full max-w-3xl text-[6rem] lg:text-[6rem] font-cormorant  text-[color:var(--color-text)] font-bold lg:justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute right-0 hidden w-12 h-12 -mt-2 -mr-16 text-[color:var(--color-text)] lg:inline-block" viewBox="0 0 975.036 975.036">
                 <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                 </path>
@@ -20,8 +20,8 @@
                     <a href="/prose/{prose[0].slug}">
 
                     <div class="flex flex-col items-start lg:items-center h-[100px] lg:h-[300px] justify-evenly">
-                        <h3 class="font-bold text-left lg:text-center font-dm  text-2xl lg:text-5xl capitalize ">{prose[0].title}</h3>
-                        <h4 class="font-bold text-left font-mono  text-xl capitalize ">{prose[0].author}</h4>
+                        <h3 class="font-bold text-left lg:text-center font-dm  text-2xl lg:text-4xl capitalize ">{prose[0].title}</h3>
+                        <h4 class="font-bold text-left font-mono  lg:text-xl text-md capitalize  ">{prose[0].author}</h4>
                     </div>
                     </a>
                    
@@ -30,8 +30,8 @@
                         <a href="/prose/{prose[1].slug}">
 
                         <div class="flex flex-col items-start lg:items-center h-[100px] lg:h-[300px] justify-evenly">
-                            <h3 class="font-bold text-left lg:text-center font-dm  text-2xl lg:text-5xl capitalize ">{prose[1].title}</h3>
-                            <h4 class="font-bold text-left font-mono  text-xl capitalize ">{prose[1].author}</h4>
+                            <h3 class="font-bold text-left lg:text-center font-dm  text-2xl lg:text-4xl capitalize ">{prose[1].title}</h3>
+                            <h4 class="font-bold text-left font-mono  lg:text-xl text-md capitalize  ">{prose[1].author}</h4>
                         </div>          
                         
                         </a>
@@ -41,8 +41,8 @@
                     <a href="/prose/{prose[2].slug}">
 
                     <div class="flex flex-col items-start lg:items-center h-[100px] lg:h-[300px] justify-evenly">
-                        <h3 class="font-bold text-left lg:text-center font-dm  text-2xl lg:text-5xl capitalize ">{prose[2].title}</h3>
-                        <h4 class="font-bold text-left font-mono  text-md capitalize ">{prose[2].author}</h4>
+                        <h3 class="font-bold text-left lg:text-center font-dm  text-2xl lg:text-4xl capitalize ">{prose[2].title}</h3>
+                        <h4 class="font-bold text-left font-mono  lg:text-xl text-md capitalize  ">{prose[2].author}</h4>
                     </div>
                    </a> 
                 </div>

@@ -4,9 +4,9 @@
     const article = content.filter(item => item.category === "articles")
   </script>
   
-  <section class="lg:grid lg:min-h-[50vh] py-12 lg:pt-28 lg:px-24 lg:grid-cols-8 gap-8 justify-end items-start">
+  <section class="lg:grid lg:min-h-[50vh] py-12 lg:pt-28 lg:px-12 lg:grid-cols-8 gap-8 justify-end items-start">
       <div class="col-span-3  px-6 h-full">
-          <h2 class="font-cormorant  font-black italic leading-10 tracking-tight text-left text-[color:var(--color-text)] md:text-center sm:leading-none text-6xl md:text-6xl lg:text-[10rem]">Articles</h2>
+          <h2 class="font-cormorant  font-bold  leading-10 tracking-tight text-left text-[color:var(--color-text)] md:text-left sm:leading-none text-6xl md:text-6xl lg:text-[6rem]">Articles</h2>
       </div>
       <div class=" col-span-5 flex items-center ">
           <div class="flex-1 max-w-4xl mx-auto p-8">

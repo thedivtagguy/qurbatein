@@ -2,7 +2,7 @@
 <main class="flex lg:flex-row flex-col px-8 bg-[color:#F5EBE0] h-1/2 justify-between items-center    w-full mx-auto text-gray-600 body-font">
 
 <!-- Section 1 -->
-<section class="py-20 lg:px-20 ">
+<section class="py-20 lg:px-12 ">
   <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <h2 class="text-3xl font-cormorant font-bold tracking-tight text-gray-900 sm:text-4xl md:text-7xl xl:text-7xl">
          A Nice Headline Fits Here

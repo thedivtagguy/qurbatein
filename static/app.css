@@ -716,6 +716,14 @@ body{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -1199,6 +1207,10 @@ body{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1298,6 +1310,9 @@ body{
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+.text-\[6rem\] {
+  font-size: 6rem;
 }
 .font-black {
   font-weight: 900;
@@ -1627,6 +1642,9 @@ body{
     padding-left: 0px;
     padding-right: 0px;
   }
+  .md\:text-left {
+    text-align: left;
+  }
   .md\:text-center {
     text-align: center;
   }
@@ -1871,6 +1889,19 @@ body{
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+  .lg\:text-\[7rem\] {
+    font-size: 7rem;
+  }
+  .lg\:text-\[5rem\] {
+    font-size: 5rem;
+  }
+  .lg\:text-\[6rem\] {
+    font-size: 6rem;
+  }
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 @media (min-width: 1280px) {
