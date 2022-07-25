@@ -4,78 +4,49 @@
     const photoEssay = content.filter(item => item.category === "photo essay")
     
   </script>
-  
-  <section class="grid bg-[color:#e3d5ca] lg:min-h-[50vh] grid-cols-1 py-20 px-6 lg:px-24 lg:grid-cols-8 gap-8 justify-between items-start">
-      <div class="col-span-4  h-full">
-        <div class=" col-span-5 flex lg:flex-row flex-col items-center ">
-              <ul class="grid grid-cols-6 gap-6 w-4/5">
-                <li class="lg:col-span-6 col-span-3 border-r-2 lg:p-4 hover-content border-black">
-                    <blockquote class="flex image1   h-[180px] overlay items-center justify-between w-full col-span-1 p-4">
-                        <div class="flex  flex-col pr-10">
-                            <a href="/photo-essay/{photoEssay[0].slug}">
-                                <div class="relative pl-12">
-                                    <h3 class="mt-2 text-sm font-cormorant  font-bold italic text-white sm:text-base lg:text-4xl">{photoEssay[0].title}</h3>
-                                </div>
-                                <h3 class="pl-12 mt-3 text-sm font-medium leading-5 text-white truncate sm:text-base ">
-                                    {photoEssay[0].author}
-                                </h3>
-                                <p class="mt-1 text-sm leading-5 text-white truncate"></p>
-                            </a>
-                        </div>
-                    </blockquote>
-                 </li>
-                 <li class="lg:col-span-6 col-span-3 border-l-2 p-4 hover-content border-black">
-                    <blockquote class="flex image2   h-[180px] overlay items-center justify-between w-full col-span-1 p-4">
-                        <div class="flex  flex-col pr-10">
-                            <div class="relative pl-12">
-                                <h3 class="mt-2 text-sm font-cormorant  font-bold italic text-white sm:text-base lg:text-4xl">{photoEssay[1].title}</h3>
-                            </div>
-    
-                            <h3 class="pl-12 mt-3 text-sm font-medium leading-5 text-white truncate sm:text-base ">
-                                {photoEssay[1].author}
-                            </h3>
-                            <p class="mt-1 text-sm leading-5 text-white truncate"></p>
-                        </div>
-                    </blockquote>
-                 </li>
-                 <li class="lg:col-span-6 col-span-3 border-r-2   p-4 hover-content border-black">
-                    <blockquote class="flex image3   h-[180px] overlay items-center justify-between w-full col-span-1 p-4">
-                        <div class="flex  flex-col pr-10">
-                            <a href="/photo-essay/{photoEssay[2].slug}">
-                            <div class="relative pl-12">
-                                <h3 class="mt-2 text-sm font-cormorant  font-bold italic text-white sm:text-base lg:text-4xl">{photoEssay[2].title}</h3>
-                            </div>
-    
-                            <h3 class="pl-12 mt-3 text-sm font-medium leading-5 text-white truncate sm:text-base ">
-                                {photoEssay[2].author}
-                            </h3>
-                            <p class="mt-1 text-sm leading-5 text-white truncate"></p>
-                            </a>
-                        </div>
-                    </blockquote>
-                 </li>
-              </ul>
-          </div>
-      </div>
-      <div class="col-span-4 flex items-end justify-end ">
-          <div id='photo-essay' class="flex-1 max-h-[700px] max-w-4xl mx-auto p-8">
-            <div class="grid justify-center items-center grid-cols-2">
-                <div class="h-[300px]"></div>
-                <div class="h-[300px] p-8">
-                    <!-- <img src="/assets/photoInset.jpg" width="500" alt="Inset"> -->
-                </div>
-                <div id="textbox" class="h-[380px] border-t-2 z-10 border-black border-r-2 p-12 flex justify-end items-center bg-[color:#e3d5ca]">
-                    <h2 class="text-xl font-cormorant  font-black italic leading-10 tracking-tight text-left text-[color:var(--color-text)] md:text-right sm:leading-none md:text-6xl lg:text-[10rem]">Photo<br>Essays</h2>
-
-                </div>
-                <div class="h-[350px]"></div>
-            </div>
-          </div>
  
-        </div>
-  </section>
-
   
+<!-- Section 1 -->
+<section class="relative bg-[color:#e3d5ca] w-full">
+    <div class="relative w-full  px-5 py-10 mx-auto sm:py-12 md:py-16  max-w-7xl">
+
+        <h2 class="font-cormorant  font-bold  leading-10 tracking-tight text-left text-[color:var(--color-text)] md:text-left sm:leading-none text-6xl md:text-6xl lg:text-[6rem]">Photo Essays</h2>
+        <div class="flex grid h-full grid-cols-12 gap-10 pb-10 mt-8 ">
+            <div class="relative shadow-xl  flex flex-col items-start justify-end h-full col-span-10 overflow-hidden rounded-xl group md:col-span-6 xl:col-span-4">
+                <a href="/photo-essay/{photoEssay[0].slug}" class="block w-full transition duration-300 ease-in-out transform bg-center bg-cover h-[420px] hover:scale-110" style="background-image:url('/images/call-1.jpg'); filter:sepia(0.5);">
+                </a>
+                <div class="relative z-20 w-full h-[180px] py-8 text-[color:var(--color-text)] bg-[color:#d6c2b3] border-t-0 border-yellow-200 px-7">
+                    <a href="/photo-essay/{photoEssay[0].slug}" class="inline-block text-xs font-semibold absolute top-0 -mt-3.5 rounded-full px-4 py-2 uppercase bg-[color:#B99379] text-white">{photoEssay[0].author}</a>
+                    <h2 class="text-3xl font-bold"><a href="/photo-essay/{photoEssay[0].slug}">{photoEssay[0].title}</a></h2>
+
+                </div>
+            </div>
+            <div class="relative shadow-xl flex flex-col items-start justify-end h-full col-span-10 overflow-hidden rounded-xl group md:col-span-6 xl:col-span-4">
+                <a href="/photo-essay/{photoEssay[1].slug}" class="block w-full transition duration-300 ease-in-out transform bg-center bg-cover h-[420px] hover:scale-110" style="background-image:url('/images/call-4.jpg'); filter:sepia(0.5);">
+                </a>
+                <div class="relative z-20 w-full h-[180px] py-8 text-[color:var(--color-text)] bg-[color:#d6c2b3] border-t-0 border-yellow-200 px-7">
+                    <a href="/photo-essay/{photoEssay[1].slug}" class="inline-block text-xs font-semibold absolute top-0 -mt-3.5 rounded-full px-4 py-2 uppercase bg-[color:#B99379] text-white">{photoEssay[1].author}</a>
+                    <h2 class="text-3xl font-bold"><a href="/photo-essay/{photoEssay[1].slug}">{photoEssay[1].title}</a></h2>
+
+                </div>
+            </div>
+
+            <div class="relative shadow-xl flex flex-col items-start justify-end h-full col-span-10 overflow-hidden rounded-xl group md:col-span-6 xl:col-span-4">
+                <a href="/photo-essay/{photoEssay[2].slug}" class="block w-full transition duration-300 ease-in-out transform bg-center bg-cover h-[420px] hover:scale-110" style="background-image:url('/images/paradox-1.jpg'); filter:sepia(0.5);">
+                </a>
+                <div class="relative z-20 w-full h-[180px] py-8 text-[color:var(--color-text)] bg-[color:#d6c2b3] border-t-0 border-yellow-200 px-7">
+                    <a href="/photo-essay/{photoEssay[2].slug}" class="inline-block text-xs font-semibold absolute top-0 -mt-3.5 rounded-full px-4 py-2 uppercase bg-[color:#B99379] text-white">{photoEssay[2].author}</a>
+                    <h2 class="text-3xl font-bold"><a href="/photo-essay/{photoEssay[2].slug}">{photoEssay[2].title}</a></h2>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+</section>
+
   
   <style>
 

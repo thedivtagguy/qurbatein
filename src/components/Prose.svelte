@@ -5,7 +5,7 @@
   </script>
   
 <!-- Section 1 -->
-<section class="flex items-center border-2 lg:mx-auto border-[color:var(--color-text)] justify-center max-w-8xl  ">
+<section class="flex items-center max-w-7xl border-2 mx-8 lg:mx-auto border-[color:var(--color-text)] justify-center max-w-8xl  ">
     <div class="px-16 py-12">
         <div class="container flex flex-col items-start mx-auto lg:items-center">
             <h2 class="relative flex items-start justify-start w-full max-w-3xl text-[6rem] lg:text-[6rem] font-cormorant  text-[color:var(--color-text)] font-bold lg:justify-center">
