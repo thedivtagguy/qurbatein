@@ -920,6 +920,12 @@ body{
 .w-auto {
   width: auto;
 }
+.w-\[300px\] {
+  width: 300px;
+}
+.w-\[350px\] {
+  width: 350px;
+}
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1949,6 +1955,9 @@ body{
   }
   .lg\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
   .lg\:flex-row {
     -webkit-box-orient: horizontal;
