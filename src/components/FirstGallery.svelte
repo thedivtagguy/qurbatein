@@ -35,6 +35,6 @@
 
 <style>
   img {
-    filter: grayscale(0.9)  sepia(0.9) contrast(1.2) brightness(0.8);
+    filter: grayscale(0.3)  sepia(0.5) contrast(1.2) brightness(0.8);
   }
 </style>
