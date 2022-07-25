@@ -1663,6 +1663,11 @@ body{
 .outline {
   outline-style: solid;
 }
+.blur {
+  --tw-blur: blur(8px);
+  -webkit-filter: var(--tw-filter);
+          filter: var(--tw-filter);
+}
 .grayscale {
   --tw-grayscale: grayscale(100%);
   -webkit-filter: var(--tw-filter);

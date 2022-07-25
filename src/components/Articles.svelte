@@ -37,7 +37,7 @@
   
   <style>
     #articles {
-    background-image: url('/assets/home2.jpg');
+    background-image: url('/assets/home22.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

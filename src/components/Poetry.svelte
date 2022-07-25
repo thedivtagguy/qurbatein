@@ -4,12 +4,12 @@
   const poetry = content.filter(item => item.category === "poetry")
   
 </script>
-
-<section id="poetry"  class="grid min-h-[50vh] py-12 lg:py-28 max-w-9xl mx-auto px-4 lg:grid-cols-8 gap-8 justify-end items-start">
-    <div class="col-span-3  flex justify-center items-center h-full">
+<div></div>
+<section  id="poetry" class="grid min-h-[50vh] py-12 lg:py-28 max-w-9xl mx-auto px-4 lg:grid-cols-8 gap-8 justify-end items-start">
+    <div class="col-span-3 content  flex justify-center items-center h-full">
         <h2 class="text-7xl font-cormorant  font-bold  leading-10 tracking-tight text-left text-[color:var(--color-background)] px-6 lg:px-0  sm:leading-none md:text-6xl lg:text-[10rem]">Poetry</h2>
     </div>
-    <div class=" col-span-5 flex items-center ">
+    <div class=" col-span-5 content flex items-center ">
         <div class="flex-1 max-w-4xl mx-auto p-8">
           <ul class="grid grid-cols-6 gap-8">
             <a class="col-span-6 md:col-span-2 h-56 border-2 bg-[color:var(--color-background)] border-black hover-content" href="/poetry/{poetry[0].slug}">
@@ -56,13 +56,18 @@
 <style>
 
 #poetry {
-  background-image: url('/assets/home1.png');
+  height: 100%;
+  background-image: url('/assets/home1_34.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(1) sepia(0.5) ;
+  filter:sepia(0.5) ;
   /* Background position is fixed */
   background-attachment: fixed;
+}
+
+.content {
+  background-color: transparent!important;
 }
 
 
