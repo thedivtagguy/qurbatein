@@ -8,7 +8,7 @@
   
 <!-- Section 1 -->
 <section class="relative bg-[color:#e3d5ca] w-full">
-    <div class="relative w-full   py-10 mx-auto sm:py-12 md:py-16  max-w-7xl">
+    <div class="relative w-full   py-10 mx-auto sm:py-12 md:py-16 md:px-16  max-w-9xl">
 
         <h2 class="font-cormorant  font-bold  leading-10 tracking-tight text-left text-[color:var(--color-text)] md:text-left sm:leading-none text-6xl md:text-6xl px-8 lg:text-[6rem]">Photo Essays</h2>
         <div class="flex grid h-full grid-cols-1 px-8 lg:grid-cols-12 gap-10 pb-10 mt-8 ">

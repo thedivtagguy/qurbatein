@@ -55,5 +55,13 @@ module.exports = [
   {
     id: "1V4Qbtt8XRWg9k9b_TGWFRYVAsW7OtLMPBG1UUDrlei0",
     filepath: "src/data/posts/if-you-cannot-sleep.json"
+  },
+  {
+    id: "1JrkypafBPi4b9J735yX8SsKUWc-ijAYKT-ApADp9vnI",
+    filepath: "src/data/posts/pretend.json"
+  },
+  {
+    id: "1p1GBcnjZfHt8tnDfM2u39mxc4aqjSSFK0ykenEIUhMU",
+    filepath: "src/data/posts/seduction-of-the-night.json"
   }
 ];

@@ -4,13 +4,13 @@
     const article = content.filter(item => item.category === "articles")
   </script>
   
-  <section class="lg:grid lg:min-h-[50vh] max-w-7xl mx-auto py-12 lg:pt-28  lg:grid-cols-8 gap-8 justify-end items-start">
-      <div class="col-span-3  h-full">
-          <h2 class="font-cormorant  font-bold  px-8 leading-10 tracking-tight text-left text-[color:var(--color-text)] md:text-left sm:leading-none text-6xl md:text-6xl lg:text-[6rem]">Articles</h2>
+  <section class="lg:grid lg:min-h-[50vh] max-w-9xl mx-auto mb-12  lg:grid-cols-8 gap-8 justify-end items-start">
+      <div id="articles" class="col-span-3 flex h-40 justify-center items-center md:h-full">
+          <h2 class="font-cormorant  font-bold  px-8 leading-10 tracking-tight text-left text-[color:var(--color-background)] md:text-left sm:leading-none text-6xl md:text-6xl lg:text-[9rem]">Articles</h2>
       </div>
       <div class=" col-span-5 flex items-center ">
           <div class="flex-1 max-w-4xl mx-auto p-8">
-            <ul class="grid grid-cols-6 gap-8">
+            <ul class="grid grid-cols-6 gap-4">
                 {#each article as item, i}
 
                 <li class="col-span-6 border-t-[3px] lg:my-4 border-black">
@@ -36,15 +36,13 @@
   </section>
   
   <style>
-  .vl {
-    border-left: 6px solid green;
-    height: 500px;
-  }
-  .author::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='100' cy='10' r='8' stroke='black' stroke-width='2' fill='red'/%3E%3Cpolyline points='20,20 40,25 60,40 80,120 120,140 200,180' style='fill:none;stroke:black;stroke-width:3'/%3E%3C/svg%3E ");
-    width: 20px;
-    height: 20px;
-  }
-  
+    #articles {
+    background-image: url('/assets/home2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    filter: grayscale(0.1) sepia(0.2) contrast(1.2) brightness(0.8);
+    }  
   </style>
   

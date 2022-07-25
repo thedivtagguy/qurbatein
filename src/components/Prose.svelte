@@ -5,7 +5,7 @@
   </script>
   
 <!-- Section 1 -->
-<section class="flex items-center max-w-7xl border-2 mx-8 lg:mx-auto border-[color:var(--color-text)] justify-center max-w-8xl  ">
+<section class="flex items-center max-w-9xl md:px-8 mx-6 border-2 md:mx-20  border-[color:var(--color-text)] justify-center   ">
     <div class="px-16 py-12">
         <div class="container flex flex-col items-start mx-auto lg:items-center">
             <h2 class="relative flex items-start justify-start w-full max-w-3xl text-[6rem] lg:text-[6rem] font-cormorant  text-[color:var(--color-text)] font-bold lg:justify-center">
@@ -37,12 +37,22 @@
                         </a>
                 </div>
 
-                <div class="flex flex-col hover:bg-[color:var(--color-text)] border-b-2  lg:border-none border-gray-300 hover:cursor-pointer hover:text-[color:var(--color-background)] items-start justify-start w-full h-auto px-0 mx-0 mb-12  border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:border-[color:var(--color-text)]">
+                <div class="flex flex-col hover:bg-[color:var(--color-text)] border-b-2 lg:border-b-[0] border-gray-300 hover:cursor-pointer hover:text-[color:var(--color-background)] items-start  lg:border-r justify-start w-full h-auto px-0 mx-0 mb-12  border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:border-[color:var(--color-text)]">
                     <a href="/prose/{prose[2].slug}">
 
                     <div class="flex flex-col items-start lg:items-center h-[100px] lg:h-[300px] justify-evenly">
                         <h3 class="font-bold text-left lg:text-center font-dm  text-2xl lg:text-4xl capitalize ">{prose[2].title}</h3>
                         <h4 class="font-bold text-left font-mono  lg:text-xl text-md capitalize  ">{prose[2].author}</h4>
+                    </div>
+                   </a> 
+                </div>
+
+                <div class="flex flex-col hover:bg-[color:var(--color-text)] border-b-2  lg:border-none border-gray-300 hover:cursor-pointer hover:text-[color:var(--color-background)] items-start justify-start w-full h-auto px-0 mx-0 mb-12  border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:border-[color:var(--color-text)]">
+                    <a class="w-full" href="/prose/{prose[3].slug}">
+
+                    <div class="flex flex-col  lg:items-center h-[100px] lg:h-[300px] justify-evenly">
+                        <h3 class="font-bold text-left lg:text-center font-dm  text-2xl lg:text-4xl capitalize ">{prose[3].title}</h3>
+                        <h4 class="font-bold text-left font-mono  lg:text-xl text-md capitalize  ">{prose[3].author}</h4>
                     </div>
                    </a> 
                 </div>
