@@ -1,5 +1,6 @@
 <script>
     import content from "$data/content.csv"
+    import star from "$svg/star.svg"
     // Keep only content that has category "article"
     const article = content.filter(item => item.category === "articles")
   </script>
@@ -16,13 +17,16 @@
                 <li class="col-span-6 border-t-[3px] lg:my-4 border-black">
                     <a href="/articles/{item.slug}" class="block hover:text-[color:var(--color-text)]">
 
-                    <div class="flex py-4 justify-start gap-6">
+                    <div class="flex py-4 justify-start items-start gap-6">
                         <div class="flex-0">
                             <span class="text-xl"><span class="font-bold">[</span>{i + 1}<span class="font-bold"> ]</span>
                         </div>
                         <div class="flex-1">
                                 <h3 class="lg:text-2xl text-xl font-mono hover:underline hover:cursor-pointer ">{item.title}</h3>
                         </div>
+                        {#if item.featured == "TRUE"}
+                        <div class="flex  justify-start items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                        {/if}
                         <div>
                             <span class="text-sm font-mono">{item.author}</span>
                         </div>

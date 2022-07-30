@@ -1,7 +1,8 @@
 <script>
     import content from "$data/content.csv"
     // Keep only content that has category "Poetry"
-    const prose = content.filter(item => item.category === "prose")
+    const prose = content.filter(item => item.category === "prose");
+    import star from "$svg/star.svg"
   </script>
   
 <!-- Section 1 -->
@@ -20,6 +21,9 @@
                     <a href="/prose/{prose[0].slug}">
 
                     <div class="flex flex-col items-start lg:items-center h-[100px] lg:h-[300px] justify-evenly">
+                        {#if prose[0].featured == "TRUE"}
+                        <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                        {/if}
                         <h3 class="font-bold text-left lg:text-center font-dm  text-2xl lg:text-4xl capitalize ">{prose[0].title}</h3>
                         <h4 class="font-bold text-left font-mono  lg:text-xl text-md capitalize  ">{prose[0].author}</h4>
                     </div>
@@ -30,6 +34,9 @@
                         <a href="/prose/{prose[1].slug}">
 
                         <div class="flex flex-col items-start lg:items-center h-[100px] lg:h-[300px] justify-evenly">
+                            {#if prose[1].featured == "TRUE"}
+                            <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                            {/if}
                             <h3 class="font-bold text-left lg:text-center font-dm  text-2xl lg:text-4xl capitalize ">{prose[1].title}</h3>
                             <h4 class="font-bold text-left font-mono  lg:text-xl text-md capitalize  ">{prose[1].author}</h4>
                         </div>          
@@ -41,6 +48,9 @@
                     <a href="/prose/{prose[2].slug}">
 
                     <div class="flex flex-col items-start lg:items-center h-[100px] lg:h-[300px] justify-evenly">
+                        {#if prose[2].featured == "TRUE"}
+                        <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                        {/if}
                         <h3 class="font-bold text-left lg:text-center font-dm  text-2xl lg:text-4xl capitalize ">{prose[2].title}</h3>
                         <h4 class="font-bold text-left font-mono  lg:text-xl text-md capitalize  ">{prose[2].author}</h4>
                     </div>
@@ -51,6 +61,9 @@
                     <a class="w-full" href="/prose/{prose[3].slug}">
 
                     <div class="flex flex-col  lg:items-center h-[100px] lg:h-[300px] justify-evenly">
+                        {#if prose[3].featured == "TRUE"}
+                        <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                        {/if}
                         <h3 class="font-bold text-left lg:text-center font-dm  text-2xl lg:text-4xl capitalize ">{prose[3].title}</h3>
                         <h4 class="font-bold text-left font-mono  lg:text-xl text-md capitalize  ">{prose[3].author}</h4>
                     </div>

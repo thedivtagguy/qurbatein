@@ -16,9 +16,9 @@
           <ul class="grid grid-cols-6 gap-8">
             <a class="col-span-6 md:col-span-2 min-h-56 border-2 bg-[color:var(--color-background)] border-black hover-content" href="/poetry/{poetry[0].slug}">
             <li class="min-h-56">
-                <div class="h-24 p-8">
-                  {#if poetry[0].featured}
-                  {@html star}
+                <div class="h-24 p-6">
+                  {#if poetry[0].featured == "TRUE"}
+                  <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
                   {/if}
                   <h3 class="font-libre italic text-center font-bold text-2xl">{poetry[0].title}</h3>
                   <hr class="divider">
@@ -28,7 +28,10 @@
             </a>
             <a  class="col-span-6 md:col-span-4 border-2 bg-[color:var(--color-primary)] h-56 hover:border-2 hover-content" href="/poetry/{poetry[2].slug}" >
             <li class="min-h-56">
-              <div class="h-24 p-8 text-white">
+              <div class="h-24 p-6 text-white">
+                {#if poetry[2].featured == "TRUE"}
+                  <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                  {/if}
                 <h3 class="font-mono text-center font-semibold text-5xl">{poetry[2].title}</h3>
                 <hr class="divider-white ">
                 <p class="text-center text-xl leading-10 tracking-tight text-white md:text-center sm:leading-none md:text-6xl lg:text-[1.5rem]">{poetry[2].author}</p>
@@ -37,7 +40,10 @@
             </a>
             <a  class="col-span-6 md:col-span-3 h-56 border-2 border-black bg-[color:var(--color-background)] hover-content" href="/poetry/{poetry[3].slug}" >
             <li class="min-h-56">
-              <div class="h-24 p-8">
+              <div class="h-24 p-6">
+                {#if poetry[3].featured == "TRUE"}
+                <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                {/if}
                 <h3 class="font-libre italic  text-center font-semibold text-5xl">{poetry[3].title}</h3>
                 <hr class="divider">
                 <p class="text-center text-xl leading-10 tracking-tight text-[color:var(--color-text)] md:text-center sm:leading-none md:text-6xl lg:text-[1.5rem]">{poetry[3].author}</p>
@@ -46,7 +52,10 @@
             </a>
             <a   class="col-span-6 md:col-span-3 border-2  bg-[color:var(--color-background)] border-black h-56 hover-content" href="/poetry/{poetry[1].slug}">
             <li class="min-h-56">
-              <div class="h-24 p-8">
+              <div class="h-24 p-6">
+                {#if poetry[1].featured == "TRUE"}
+                <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                {/if}
                 <h3 class="font-libre  italic text-center font-semibold text-5xl">{poetry[1].title}</h3>
                 <hr class="divider">
                 <p class="text-center text-xl leading-10 tracking-tight md:text-center sm:leading-none md:text-6xl lg:text-[1.5rem]">{poetry[1].author}</p>

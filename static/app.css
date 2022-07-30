@@ -1116,6 +1116,9 @@ body{
 .p-4 {
   padding: 1rem;
 }
+.p-6 {
+  padding: 1.5rem;
+}
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1191,6 +1194,10 @@ body{
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 .pb-5 {
   padding-bottom: 1.25rem;
@@ -1360,6 +1367,18 @@ body{
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+.text-\[color\:\#ffd401\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 212 1 / var(--tw-text-opacity));
+}
+.text-\[color\:\#e0b300\] {
+  --tw-text-opacity: 1;
+  color: rgb(224 179 0 / var(--tw-text-opacity));
+}
+.text-\[color\:\#eac638\] {
+  --tw-text-opacity: 1;
+  color: rgb(234 198 56 / var(--tw-text-opacity));
 }
 .decoration-dashed {
   -webkit-text-decoration-style: dashed;
