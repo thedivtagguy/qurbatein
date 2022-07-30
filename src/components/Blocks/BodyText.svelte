@@ -14,7 +14,6 @@
     text = text.replace(/\n/g, "<br>");
     // If there are numbers like [3], replace them with <sup>3</sup>
     text = text.replace(/\[(\d+)\]/g, "<sup>$1</sup>");
-    console.log(marked(text));
 
 </script>
 
