@@ -32,6 +32,7 @@ export const prerender = true;
     import BodyText from "$components/Blocks/BodyText.svelte";
     import ArticleImage from "$components/Blocks/ArticleImage.svelte";
     import Pullquote from "$components/Blocks/Pullquote.svelte";
+    import Bio from "$components/Blocks/Bio.svelte";
     export let post;
     
     let titleClass;
@@ -81,6 +82,10 @@ export const prerender = true;
     {#if block.Type == "pullquote"}
        <Pullquote text={block.Text}/>
     {/if}
+
+    {#if block.Type == "Bio"}
+    <Bio text={block.Text} name={post.author} image={block.photo}/>
+{/if}
     {/each}
 
     <!-- {#if post.bio}

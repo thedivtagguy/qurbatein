@@ -84,7 +84,7 @@ import Bio from "$components/Blocks/Bio.svelte";
     {/if}
 
     {#if block.Type == "Bio"}
-        <Bio text={block.Text} />
+        <Bio text={block.Text} name={post.author} image={block.photo}/>
     {/if}
     {/each}
 

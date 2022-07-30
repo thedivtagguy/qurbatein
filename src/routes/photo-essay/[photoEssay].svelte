@@ -86,8 +86,8 @@ export const prerender = true;
         <EssayPhoto src={block.src} caption={block.caption}/>
     {/if}
 
-    {#if block.Type == "bio"}
-    <Bio text={block.Text}/>
+    {#if block.Type == "Bio"}
+    <Bio text={block.Text} name={post.author} image={block.photo}/>
 {/if}
     {/each}
 

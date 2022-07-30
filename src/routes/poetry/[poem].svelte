@@ -30,6 +30,7 @@ export const prerender = true;
 </script>
 <script>
     import BodyText from "$components/Blocks/BodyText.svelte";
+    import Bio from "$components/Blocks/Bio.svelte";
     import convertToSlug from "$utils/slugify";
     // Combine story and post into one object called post
     export let post;
@@ -89,6 +90,10 @@ export const prerender = true;
                     {#if block.Type === 'text'}
                         <BodyText text ={block.Text}/>
                     {/if}
+
+                    {#if block.Type == "Bio"}
+                    <Bio text={block.Text} name={post.author} image={block.photo}/>
+                {/if}
                     {/each}
             
             
@@ -123,6 +128,10 @@ export const prerender = true;
                     {#if block.Type === 'text'}
                         <BodyText text ={block.Text}/>
                     {/if}
+
+                    {#if block.Type == "Bio"}
+                    <Bio text={block.Text} name={post.author} image={block.photo}/>
+                {/if}
                     {/each}
             </div>
         </div>
