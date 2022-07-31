@@ -34,9 +34,15 @@
   import ArticleImage from "$components/Blocks/ArticleImage.svelte";
   import Pullquote from "$components/Blocks/Pullquote.svelte";
   import Bio from "$components/Blocks/Bio.svelte";
-  import Related from "$components/Related.svelte";
-import { each } from "svelte/internal";
   export let post;
+  let authors = post.author.split(',');
+  authors = authors.map(string => string.trim())
+
+  // Find block of type 'Bio' in the blocks array in post
+  const bio = post.blocks.filter(block => block.Type === 'Bio')[0];
+  console.log(bio);
+  let authorPhotos = bio.photo.split(',');
+  authorPhotos = authorPhotos.map(string => string.trim())
 </script>
 
 {#if post.title != "404"}
@@ -94,7 +100,7 @@ import { each } from "svelte/internal";
 
       {#each post.blocks as block}
       {#if block.Type == "Bio"}
-      <Bio text={block.Text} name={post.author} image={block.photo} />
+      <Bio text={block.Text} name={authors} image={authorPhotos} />
     {/if}
     {/each}
 

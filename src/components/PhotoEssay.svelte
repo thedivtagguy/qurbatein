@@ -2,7 +2,7 @@
     import content from "$data/content.csv"
     // Keep only content that has category "photo-essay"
     const photoEssay = content.filter(item => item.category === "photo essay")
-    
+    console.log(photoEssay[0])
   </script>
  
   

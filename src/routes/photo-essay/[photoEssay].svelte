@@ -35,7 +35,10 @@ export const prerender = true;
     import EssayPhoto from "$components/Blocks/EssayPhoto.svelte";
     import Bio from "$components/Blocks/Bio.svelte";
     export let post;
-    
+    // Convert comma separated string to array
+    let authors = post.author.split(',');
+    authors = authors.map(string => string.trim())
+    console.log(authors)
     let titleClass;
 	// Calculate title length
     const titleLength = post.title.length;
@@ -54,11 +57,8 @@ export const prerender = true;
     <h1 class="font-dm  {titleClass} text-center italic leading-royal font-extrabold text-[color:var(--color-text)]">{post.title}</h1>
     <hr class="border-b-[1px] my-6 border-[color:var(--color-text)] w-[50px] mx-auto" />
     <h2 class="pb-6 font-libre tracking-wide text-center text-xl">{post.author}</h2>
-    <!-- <hr class="border-b-[1px]  border-[color:var(--color-accent)] w-full" /> -->
 </div>
-<div class="bottom">
-    <!-- <img class="w-full opacity-30" src="/assets/topper.png" alt={post.title} /> -->
-</div>
+
 </section>
 
 <section class="mx-auto  px-6">
@@ -84,7 +84,7 @@ export const prerender = true;
     {/if}
 
     {#if block.Type == "Bio"}
-    <Bio text={block.Text} name={post.author} image={block.photo}/>
+    <Bio text={block.Text} name={authors} image={block.photo}/>
     {/if}
 
     {#if block.Type == "h2"}

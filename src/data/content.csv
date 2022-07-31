@@ -1,17 +1,17 @@
-title,author,aboutAuthor,slug,category,published,featured
-Desiring Delhi,Madhavi Menon,,desiring-delhi,articles,TRUE,TRUE
-Geographies of Intimacy in Hyderabad,C.Yamini Krishna,"Assistant Professor, FLAME University",geographies-of-intimacy-in-hyderabad,articles,TRUE,TRUE
-"Mapping Excesses, Mapping Bodies: Red Dress Waali Ladki, the City and Sexual violence",Supraja R.,,red-dress-wali-ladki,articles,TRUE,FALSE
-Efflorescence of Love: Male Same-Sex Desire in Early Modern India,Anuj Sah,,same-sex-desire-in-early-modern-india,articles,TRUE,FALSE
-"If You Cannot Sleep, Call Me",Dikshya Karki,,if-you-cannot-sleep,photo essay,TRUE,FALSE
-"Eat, Prey, Love",Rhea Borkotoky,,eat-prey-love,photo essay,TRUE,FALSE
-The Paradox of Privacy in Public Places,"Megha Agarwal, Naazir Khan",,paradox-of-privacy,photo essay,TRUE,FALSE
-After Maidan Garhi,Akhil Katyal,,after-maidan-garhi,poetry,TRUE,TRUE
-Arrival,Muhammad Raazi,,arrival,poetry,TRUE,FALSE
-Metro-Nome-Love,Salik Basharat,,metro-nome-love,poetry,TRUE,FALSE
-Habits,Abhijato Sensarma,,habits,poetry,TRUE,FALSE
-Just Another Story,Himanjali Sankar,,sex-and-the-city,prose,TRUE,TRUE
-A Tiger Learns to Leap,Sayantan Ghosh,,tiger-learns-to-leap,prose,TRUE,TRUE
-Tu Kisi Rail Si,Angana Sinha Ray,,tu-kaisi-rail-si,prose,TRUE,FALSE
-The Seductions of the Night,Shilpa Phadke,,seduction-of-the-night,articles,TRUE,TRUE
-In Transit,Gayathri Sankar,,pretend,prose,TRUE,FALSE
+title,author,aboutAuthor,slug,category,published,featured,image
+Desiring Delhi,Madhavi Menon,,desiring-delhi,articles,TRUE,TRUE,
+Geographies of Intimacy in Hyderabad,C.Yamini Krishna,"Assistant Professor, FLAME University",geographies-of-intimacy-in-hyderabad,articles,TRUE,TRUE,
+"Mapping Excesses, Mapping Bodies: Red Dress Waali Ladki, the City and Sexual violence",Supraja R.,,red-dress-wali-ladki,articles,TRUE,FALSE,
+Efflorescence of Love: Male Same-Sex Desire in Early Modern India,Anuj Sah,,same-sex-desire-in-early-modern-india,articles,TRUE,FALSE,
+"If You Cannot Sleep, Call Me",Dikshya Karki,,if-you-cannot-sleep,photo essay,TRUE,FALSE,call-3.jpg
+"Eat, Prey, Love",Rhea Borkotoky,,eat-prey-love,photo essay,TRUE,FALSE,eat-5.jpg
+The Paradox of Privacy in Public Places,"Megha Agarwal, Naazir Khan",,paradox-of-privacy,photo essay,TRUE,FALSE,paradox-12.jpg
+After Maidan Garhi,Akhil Katyal,,after-maidan-garhi,poetry,TRUE,TRUE,
+Arrival,Muhammad Raazi,,arrival,poetry,TRUE,FALSE,
+Metro-Nome-Love,Salik Basharat,,metro-nome-love,poetry,TRUE,FALSE,
+Habits,Abhijato Sensarma,,habits,poetry,TRUE,FALSE,
+Just Another Story,Himanjali Sankar,,sex-and-the-city,prose,TRUE,TRUE,
+A Tiger Learns to Leap,Sayantan Ghosh,,tiger-learns-to-leap,prose,TRUE,TRUE,
+Tu Kisi Rail Si,Angana Sinha Ray,,tu-kaisi-rail-si,prose,TRUE,FALSE,
+The Seductions of the Night,Shilpa Phadke,,seduction-of-the-night,articles,TRUE,TRUE,
+In Transit,Gayathri Sankar,,pretend,prose,TRUE,FALSE,
