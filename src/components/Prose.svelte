@@ -12,7 +12,7 @@
       class="container py-12  border-[color:var(--color-background)] flex flex-col items-center mx-auto lg:items-center"
     >
       <h2
-        class="relative flex items-center w-full max-w-3xl text-[6rem] lg:text-[6rem] font-cormorant  text-[color:var(--color-background)] font-bold justify-center"
+        class="relative flex items-center py-4 w-full max-w-3xl text-[6rem] lg:text-[6rem] font-cormorant  text-[color:var(--color-background)] font-bold justify-center"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
