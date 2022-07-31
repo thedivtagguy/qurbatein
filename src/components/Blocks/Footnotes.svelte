@@ -1,6 +1,5 @@
 <script>
     export let text = [];
-    export let collapse = false;
 </script>
 
 <section class="mt-4 mx-auto">

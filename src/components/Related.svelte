@@ -4,7 +4,6 @@
     export let number = 3;
     export let current;
 
-    console.log(current);
     // Choose three items where category == related and slug != current
     let relatedItems = [];
     for (let i = 0; i < content.length; i++) {

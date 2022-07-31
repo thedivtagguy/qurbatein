@@ -39,7 +39,6 @@ export const prerender = true;
     // Convert comma separated string to array
     let authors = post.author.split(',');
     authors = authors.map(string => string.trim())
-    console.log(authors)
     let titleClass;
 	// Calculate title length
     const titleLength = post.title.length;
@@ -114,13 +113,3 @@ export const prerender = true;
 </main>
 {/if}
 
-<style>
-    :global(.large-text) {
-        @apply text-5xl;
-    }
-
-    :global(.small-text) {
-        @apply text-5xl;
-    }
-
-</style>

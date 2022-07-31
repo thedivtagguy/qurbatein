@@ -2,9 +2,7 @@
     import { marked } from "marked";
     export let text = '';
     export let name = [];
-    export let links = [];
     export let image = [];
-    console.log(image);
 </script>
 <section class="bio mx-auto max-w-2xl">
     <div class="text-xl flex justify-center items-center flex-col mt-8 bg-[color:var(--color-secondary)] text-white p-8">

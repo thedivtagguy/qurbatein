@@ -1,10 +1,4 @@
 <script>
-  import storiesData from "$data/stories.csv";
-  import wordmark from "$svg/wordmark.svg";
-
-  export let keywords;
-  export let current;
-  let stories = [];
   let d = new Date(); 
   let currentYear = d.getFullYear(); 
   export const prerender = true;

@@ -2,7 +2,6 @@
     import content from "$data/content.csv"
     // Keep only content that has category "photo-essay"
     const photoEssay = content.filter(item => item.category === "photo essay")
-    console.log(photoEssay[0])
   </script>
 <section class="relative bg-[color:#e3d5ca] w-full">
     <div class="relative w-full  py-10 mx-auto sm:py-12 md:py-16 md:px-16  max-w-9xl">
