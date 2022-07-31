@@ -2,9 +2,12 @@
     import content from "$data/content.csv";
     export let related;
     export let number = 3;
+    export let current;
 
     // Choose 3 items from content where category is equal to related
-    const relatedItems = content.filter(item => item.category === related);
+    let relatedItems = content.filter(item => item.category === related);
+    // Remove current item from related items
+    relatedItems.filter(item => item.slug !== current);
     // Shuffle items
     // Get first 3 items
     const relatedItems3 = relatedItems.slice(0, number);

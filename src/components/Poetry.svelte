@@ -18,7 +18,7 @@
             <li class="min-h-56">
                 <div class="h-24 p-6">
                   {#if poetry[0].featured == "TRUE"}
-                  <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                  <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> </span></div>
                   {/if}
                   <h3 class="font-libre italic text-center font-bold text-2xl">{poetry[0].title}</h3>
                   <hr class="divider">
@@ -30,7 +30,7 @@
             <li class="min-h-56">
               <div class="h-24 p-6 text-white">
                 {#if poetry[2].featured == "TRUE"}
-                  <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                  <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> </span></div>
                   {/if}
                 <h3 class="font-mono text-center font-semibold text-5xl">{poetry[2].title}</h3>
                 <hr class="divider-white ">
@@ -42,7 +42,7 @@
             <li class="min-h-56">
               <div class="h-24 p-6">
                 {#if poetry[3].featured == "TRUE"}
-                <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> </span></div>
                 {/if}
                 <h3 class="font-libre italic  text-center font-semibold text-5xl">{poetry[3].title}</h3>
                 <hr class="divider">
@@ -54,7 +54,7 @@
             <li class="min-h-56">
               <div class="h-24 p-6">
                 {#if poetry[1].featured == "TRUE"}
-                <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> </span></div>
                 {/if}
                 <h3 class="font-libre  italic text-center font-semibold text-5xl">{poetry[1].title}</h3>
                 <hr class="divider">

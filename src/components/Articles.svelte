@@ -25,7 +25,7 @@
                                 <h3 class="lg:text-2xl text-xl font-mono hover:underline hover:cursor-pointer ">{item.title}</h3>
                         </div>
                         {#if item.featured == "TRUE"}
-                        <div class="flex  justify-start items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> Curated</span></div>
+                        <div class="flex  justify-start items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> </span></div>
                         {/if}
                         <div>
                             <span class="text-sm font-mono">{item.author}</span>
