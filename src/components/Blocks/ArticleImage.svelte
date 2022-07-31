@@ -1,6 +1,6 @@
 <script>
     export let src;
-    export let caption;
+    export let caption = '';
     
 
     if (!src) {
