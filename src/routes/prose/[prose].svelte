@@ -33,6 +33,7 @@ export const prerender = true;
     import ArticleImage from "$components/Blocks/ArticleImage.svelte";
     import Pullquote from "$components/Blocks/Pullquote.svelte";
     import Bio from "$components/Blocks/Bio.svelte";
+import Footnotes from "$components/Blocks/Footnotes.svelte";
     export let post;
     
     let titleClass;
@@ -71,8 +72,8 @@ export const prerender = true;
     {/if} -->
 
    {#each post.blocks as block}
-   {#if block.Type == "text"}
-         <BodyText text={block.Text}/>
+    {#if block.Type == "text"}
+        <BodyText text={block.Text}/>
     {/if}
 
     {#if block.Type == "ArticleImage"}
@@ -80,42 +81,26 @@ export const prerender = true;
     {/if}
 
     {#if block.Type == "pullquote"}
-       <Pullquote text={block.Text}/>
+        <Pullquote text={block.Text}/>
     {/if}
 
-    {#if block.Type == "Bio"}
-    <Bio text={block.Text} name={post.author} image={block.photo}/>
-{/if}
-
-{#if block.Type == "h2"}
-<section class="lg:w-2/3 py-2 mx-auto">
-
- <h2> {block.Text}</h2>
-</section>
-{/if}
+    {#if block.Type == "h2"}
+        <section class="lg:w-2/3 py-2 mx-auto">
+        <h2> {block.Text}</h2>
+        </section>
+    {/if}
 
     {/each}
 
-    <!-- {#if post.bio}
-    <div class="text-xl mt-8 bg-[color:var(--color-secondary)] text-white p-8">
-        <h4 class="font-bold text-2xl pb-4">About the Author</h4>
-        <p>{@html marked.parse(post.bio)}</p>
-    </div>
-    {/if} -->
-
     {#if post.footnotes}
-    <div class="py-8">
-        <hr class="border-b-[1px] my-4 border-[color:var(--color-accent)] w-full" />
-        <h2 class="text-sm font-bold">References</h2>
-        {#each post.footnotes as footnote}
-        <div class="py-2">
-            <p class="text-sm">
-                {footnote.value}
-            </p>
-        </div>
-        {/each}
-    </div>
+        <Footnotes text={post.footnotes} />
     {/if}
+
+    {#each post.blocks as block}
+        {#if block.Type == "Bio"}
+            <Bio text={block.Text} name={post.author} image={block.photo}/>
+        {/if}
+    {/each}
 
 
 </main>

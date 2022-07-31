@@ -13,6 +13,8 @@
     text = text.replace(/\n/g, "<br>");
     // If there are numbers like [3], replace them with <sup>3</sup>
     text = text.replace(/\[(\d+)\]/g, "<sup>$1</sup>");
+    // If there are any numbers at the end of a sentence, make them <sup>3</sup>
+    text = text.replace(/^\d+/g, "<sup>$1</sup>");
 
 </script>
 
