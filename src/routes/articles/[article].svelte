@@ -35,6 +35,7 @@
   import Pullquote from "$components/Blocks/Pullquote.svelte";
   import Bio from "$components/Blocks/Bio.svelte";
   import Related from "$components/Related.svelte";
+import { each } from "svelte/internal";
   export let post;
 </script>
 
@@ -67,27 +68,31 @@
           <Pullquote text={block.Text} />
         {/if}
 
-        {#if block.Type == "Bio"}
-          <Bio text={block.Text} name={post.author} image={block.photo} />
-        {/if}
+
       {/each}
 
       {#if post.footnotes}
-        <div class="py-8">
-          <hr class="border-b-[1px] my-4 border-[color:var(--color-accent)] w-full" />
-          <h2 class="text-sm font-bold">References</h2>
-          {#each post.footnotes as footnote}
-            <div class="py-2">
-              <p class="text-sm">
-                {footnote.value}
-              </p>
-            </div>
-          {/each}
-        </div>
-      {/if}
+      <div class="py-8">
+        <hr class="border-b-[1px] my-4 border-[color:var(--color-accent)] w-full" />
+        <h2 class="text-sm font-bold">References</h2>
+        {#each post.footnotes as footnote}
+          <div class="py-2">
+            <p class="text-sm">
+              {footnote.value}
+            </p>
+          </div>
+        {/each}
+      </div>
+    {/if}
 
-      <Related number="2" related="articles" current={post.slug} />
+      {#each post.blocks as block}
+      {#if block.Type == "Bio"}
+      <Bio text={block.Text} name={post.author} image={block.photo} />
+    {/if}
+    {/each}
+
     </section>
+
   </main>
 {:else}
   <main>

@@ -91,16 +91,19 @@ export const prerender = true;
                         <BodyText text ={block.Text}/>
                     {/if}
 
-                    {#if block.Type == "Bio"}
-                    <Bio text={block.Text} name={post.author} image={block.photo}/>
-                {/if}
+                 
                     {/each}
             
             
             </div>
 
-            
+        
         </div>
+        {#each poem.blocks as block}
+        {#if block.Type == "Bio"}
+        <Bio text={block.Text} name={post.author} image={block.photo}/>
+    {/if}
+    {/each}
     </div>
     {/each}
     {:else}

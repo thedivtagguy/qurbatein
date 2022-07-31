@@ -6,12 +6,12 @@
     import Related from "$components/Related.svelte";
     import "/src/styles/tailwind.css";
     export const router = true;
-  
+    import { page } from "$app/stores"
   </script>
       <Meta/>
       <Menu/>
   <main class="bg-[color:var(--color-background)] max-w-5xl mx-auto" id="content">
     <slot />
-    <Related number="2" related="articles"/>
+    <Related number="2" related="photo essay" current={$page.params['photo-essay']}/>
     <Footer/>
   </main>

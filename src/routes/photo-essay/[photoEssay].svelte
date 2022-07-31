@@ -78,9 +78,6 @@ export const prerender = true;
        <Pullquote text={block.Text} attribution={block.attribution}/>
     {/if}
 
-    {#if block.Type == "Bio"}
-        <Bio text={block.Text} />
-    {/if}
 
     {#if block.Type == "EssayPhoto"}
         <EssayPhoto src={block.src} caption={block.caption}/>
