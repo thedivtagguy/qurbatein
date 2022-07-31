@@ -41,7 +41,6 @@
 
   // Find block of type 'Bio' in the blocks array in post
   const bio = post.blocks.filter(block => block.Type === 'Bio')[0];
-  console.log(bio);
   let authorPhotos = bio.photo.split(',');
   authorPhotos = authorPhotos.map(string => string.trim())
 </script>

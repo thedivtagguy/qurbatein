@@ -35,16 +35,6 @@ export const prerender = true;
     import Bio from "$components/Blocks/Bio.svelte";
 import Footnotes from "$components/Blocks/Footnotes.svelte";
     export let post;
-    
-    let titleClass;
-	// Calculate title length
-    const titleLength = post.title.length;
-    // If title length is greater than 15, set titleClass to "text-gray-900"
-    if (titleLength > 15) {
-        titleClass = "large-text";
-    } else {
-        titleClass = "small-text";
-    }
 </script>
 {#if post.title != "404"}
 <main>
@@ -100,13 +90,3 @@ import Footnotes from "$components/Blocks/Footnotes.svelte";
 </main>
 {/if}
 
-<style>
-    :global(.large-text) {
-        @apply text-5xl;
-    }
-
-    :global(.small-text) {
-        @apply text-9xl;
-    }
-
-</style>
