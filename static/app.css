@@ -757,6 +757,9 @@ body{
 .ml-auto {
   margin-left: auto;
 }
+.mt-0 {
+  margin-top: 0px;
+}
 .box-border {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1546,6 +1549,9 @@ body{
   }
   .md\:mt-0 {
     margin-top: 0px;
+  }
+  .md\:mt-6 {
+    margin-top: 1.5rem;
   }
   .md\:block {
     display: block;
