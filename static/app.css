@@ -906,6 +906,10 @@ body{
   -webkit-box-align: start;
           align-items: flex-start;
 }
+.items-end {
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
 .items-center {
   -webkit-box-align: center;
           align-items: center;
