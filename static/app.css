@@ -711,13 +711,13 @@ h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .mb-12 {
   margin-bottom: 3rem;
@@ -770,9 +770,6 @@ h2 {
 .ml-auto {
   margin-left: auto;
 }
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
 .box-border {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -818,8 +815,8 @@ h2 {
 .h-\[420px\] {
   height: 420px;
 }
-.h-\[180px\] {
-  height: 180px;
+.h-\[150px\] {
+  height: 150px;
 }
 .h-56 {
   height: 14rem;
@@ -829,9 +826,6 @@ h2 {
 }
 .h-24 {
   height: 6rem;
-}
-.h-\[150px\] {
-  height: 150px;
 }
 .min-h-\[50vh\] {
   min-height: 50vh;
@@ -981,9 +975,6 @@ h2 {
 .gap-1 {
   gap: 0.25rem;
 }
-.gap-3 {
-  gap: 0.75rem;
-}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1015,9 +1006,6 @@ h2 {
 .border-0 {
   border-width: 0px;
 }
-.border-\[1px\] {
-  border-width: 1px;
-}
 .border-t-\[3px\] {
   border-top-width: 3px;
 }
@@ -1030,14 +1018,14 @@ h2 {
 .border-b-\[1px\] {
   border-bottom-width: 1px;
 }
+.border-b-0 {
+  border-bottom-width: 0px;
+}
 .border-t-2 {
   border-top-width: 2px;
 }
 .border-b-2 {
   border-bottom-width: 2px;
-}
-.border-b-0 {
-  border-bottom-width: 0px;
 }
 .border-solid {
   border-style: solid;
@@ -1312,10 +1300,6 @@ h2 {
 .text-\[6rem\] {
   font-size: 6rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -1389,10 +1373,6 @@ h2 {
   --tw-text-opacity: 1;
   color: rgb(234 198 56 / var(--tw-text-opacity));
 }
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(28 100 242 / var(--tw-text-opacity));
-}
 .decoration-dashed {
   -webkit-text-decoration-style: dashed;
           text-decoration-style: dashed;
@@ -1406,12 +1386,6 @@ h2 {
 }
 .opacity-30 {
   opacity: 0.3;
-}
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -1546,10 +1520,6 @@ h2 {
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.dark .dark\:text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(63 131 248 / var(--tw-text-opacity));
 }
 .dark .dark\:hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;

@@ -34,6 +34,7 @@
   import ArticleImage from "$components/Blocks/ArticleImage.svelte";
   import Pullquote from "$components/Blocks/Pullquote.svelte";
   import Bio from "$components/Blocks/Bio.svelte";
+  import Footnotes from "$components/Blocks/Footnotes.svelte";
   export let post;
   let authors = post.author.split(',');
   authors = authors.map(string => string.trim())
@@ -85,18 +86,9 @@
       {/each}
 
       {#if post.footnotes}
-      <div class="py-8">
-        <hr class="border-b-[1px] my-4 border-[color:var(--color-accent)] w-full" />
-        <h2 class="text-sm font-bold">References</h2>
-        {#each post.footnotes as footnote}
-          <div class="py-2">
-            <p class="text-sm">
-              {footnote.value}
-            </p>
-          </div>
-        {/each}
-      </div>
+      <Footnotes text={post.footnotes} />
     {/if}
+
 
       {#each post.blocks as block}
       {#if block.Type == "Bio"}

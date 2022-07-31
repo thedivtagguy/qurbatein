@@ -34,6 +34,7 @@ export const prerender = true;
     import Pullquote from "$components/Blocks/Pullquote.svelte";
     import EssayPhoto from "$components/Blocks/EssayPhoto.svelte";
     import Bio from "$components/Blocks/Bio.svelte";
+    import Footnotes from "$components/Blocks/Footnotes.svelte";
     export let post;
     // Convert comma separated string to array
     let authors = post.author.split(',');
@@ -83,9 +84,7 @@ export const prerender = true;
         <EssayPhoto src={block.src} caption={block.caption}/>
     {/if}
 
-    {#if block.Type == "Bio"}
-    <Bio text={block.Text} name={authors} image={block.photo}/>
-    {/if}
+
 
     {#if block.Type == "h2"}
     <section class="lg:w-2/3 py-2 mx-auto">
@@ -95,24 +94,17 @@ export const prerender = true;
     {/if}
 
     {/each}
-
-
-
+    <section class="mx-auto lg:w-2/3">
     {#if post.footnotes}
-    <div class="py-8">
-        <hr class="border-b-[1px] my-4 border-[color:var(--color-accent)] w-full" />
-        <h2 class="text-sm font-bold">References</h2>
-        {#each post.footnotes as footnote}
-        <div class="py-2">
-            <p class="text-sm">
-                {footnote.value}
-            </p>
-        </div>
-        {/each}
-    </div>
-    {/if}
+        <Footnotes text={post.footnotes} />
+     {/if}
+    </section>
 
-
+    {#each post.blocks as block}
+        {#if block.Type == "Bio"}
+            <Bio text={block.Text} name={authors} image={block.photo}/>
+        {/if}
+    {/each}
 </main>
 {:else}
 <main>

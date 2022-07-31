@@ -11,7 +11,7 @@
         {#each photoEssay as item, i}
                 <div class="relative   flex flex-col items-start justify-end h-full  overflow-hidden  group md:col-span-6 xl:col-span-4">
                 <a href="/photo-essay/{item.slug}" class="block w-full transition duration-300 ease-in-out transform bg-center bg-cover h-[420px] hover:scale-110" style="background-image:url('/images/{item.image}'); filter:sepia(0.5);">
-                </a>
+</a>
                 <div class="relative z-20 w-full h-[150px] py-8 text-[color:var(--color-text)] bg-[color:#d6c2b3] border-t-0 border-yellow-200 px-7">
                     <a href="/photo-essay/{item.slug}" class="inline-block text-xs font-semibold absolute top-0 -mt-3.5 px-4 py-2 uppercase bg-[color:#B99379] text-white">{item.author}</a>
                     <h2 class="text-3xl group-hover:underline font-bold"><a href="/photo-essay/{item.slug}">{item.title}</a></h2>

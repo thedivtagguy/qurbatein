@@ -3,7 +3,7 @@
     export let collapse = false;
 </script>
 
-<section class="mt-4">
+<section class="mt-4 mx-auto">
     <div id="accordion-collapse" data-accordion="collapse">
         <h2 id="accordion-collapse-heading-1">
           <button type="button" class="flex items-center text-xl justify-between w-full p-5 font-medium text-left text-gray-900 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 hover:text-gray-100 dark:text-gray-400 hover:bg-gray-500 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
@@ -12,7 +12,7 @@
           </button>
         </h2>
         <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
-          <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+          <div class="p-5 font-light border border-b-0  dark:bg-gray-900">
             {#each text as footnote}
             <div class="py-2">
                 <p class="text-sm">
