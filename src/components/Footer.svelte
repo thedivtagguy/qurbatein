@@ -11,8 +11,10 @@
 
   const links = [
     { name: "contact", url: "mailto:csgs@ashoka.ac.in" },
-    { name: "instagram", url: "https://twitter.com/csgs_ashoka/" },
-    { name: "facebook", url: "https://facebook.com/csgsashoka"}
+    { name: "twitter", url: "https://twitter.com/csgs_ashoka/" },
+    { name: "facebook", url: "https://facebook.com/csgsashoka"},
+    { name: "instagram", url: "https://instagram.com/csgs_ashoka/" }
+ 
   ];
 
 </script>
@@ -20,7 +22,7 @@
 <footer class="max-w-5xl mx-auto py-4">
 <section class="about py-4">
   <div class="w-[200px] mx-auto pb-4">
-    <img preload src="/assets/full_logo.png" alt="CSGS Logo"/>
+    <a href="https://csgs.ac.in"><img preload src="/assets/full_logo.png" alt="CSGS Logo"/></a>
   </div>
 
   <div class="flex mx-auto font-sans font-bold gap-6 text-xs justify-center items-center ">
