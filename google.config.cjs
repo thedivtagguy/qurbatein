@@ -71,5 +71,9 @@ module.exports = [
   {
     id: "1UMgSE6NEUGEbnjmoaMg_rUbD8w_DLq81h5g8shzqEAA",
     filepath: "src/data/about.json"
+  },
+  {
+    id: "1-G3svQjBlFmrmgjjSSCsw5BKMXjBurUi5FHC1KsLUkA",
+    filepath: "src/data/submissions.json"
   }
 ];

@@ -9,7 +9,7 @@
   import ArticleImage from "$components/Blocks/ArticleImage.svelte";
   import Footer from "$components/Footer.svelte";
   import Menu from "$components/Menu.svelte";
-  import post from "$data/about.json"
+  import post from "$data/submissions.json"
   import Meta from "$components/Meta.svelte";
 </script>
 <Meta  />
@@ -23,13 +23,11 @@
         >
           {@html post.title}
         </h1>
-        <hr class="border-b-[1px] my-6 md:my-12 border-[color:var(--color-text)] w-[50px] mx-auto" />
-        <h2 class="font-dm px-4 text-5xl text-center italic leading-royal font-extrabold text-[color:var(--color-text)]">About</h2>
-      
+        <hr class="border-b-[1px] my-6 md:my-12 border-[color:var(--color-text)] w-[50px] mx-auto" />      
       </div>
     </section>
 
-    <section class="mx-auto px-6 lg:w-2/3">
+    <section class="mx-auto px-6  lg:w-2/3">
       {#each post.blocks as block}
         {#if block.Type == "text"}
           <BodyText text={block.Text} />
