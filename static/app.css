@@ -1619,6 +1619,12 @@ body{
   .md\:min-h-\[240px\] {
     min-height: 240px;
   }
+  .md\:min-h-\[260px\] {
+    min-height: 260px;
+  }
+  .md\:min-h-\[300px\] {
+    min-height: 300px;
+  }
   .md\:w-auto {
     width: auto;
   }

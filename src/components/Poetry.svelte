@@ -14,9 +14,9 @@
     <div class=" col-span-5 content flex items-center ">
         <div class="flex-1 max-w-4xl mx-auto p-8">
           <ul class="grid grid-cols-6 gap-8">
-            <a class="col-span-6 md:col-span-2 min-h-56 border-2 bg-[color:var(--color-background)] border-black hover-content" href="/poetry/{poetry[0].slug}">
-            <li class="min-h-56">
-                <div class="h-24 p-6">
+            <a class="col-span-6 md:col-span-2 border-2 bg-[color:var(--color-background)] border-black hover-content" href="/poetry/{poetry[0].slug}">
+            <li class="min-h-64">
+                <div class="p-6">
                   {#if poetry[0].featured == "TRUE"}
                   <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> </span></div>
                   {/if}
@@ -28,7 +28,7 @@
             </a>
             <a  class="col-span-6 md:col-span-4 border-2 bg-[color:var(--color-primary)] h-56 hover:border-2 hover-content" href="/poetry/{poetry[2].slug}" >
             <li class="min-h-56">
-              <div class="h-24 p-6 text-white">
+              <div class="p-6 mt-6 text-white">
                 {#if poetry[2].featured == "TRUE"}
                   <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> </span></div>
                   {/if}
@@ -40,7 +40,7 @@
             </a>
             <a  class="col-span-6 md:col-span-3 h-56 border-2 border-black bg-[color:var(--color-background)] hover-content" href="/poetry/{poetry[3].slug}" >
             <li class="min-h-56">
-              <div class="h-24 p-6">
+              <div class="p-6 mt-6">
                 {#if poetry[3].featured == "TRUE"}
                 <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> </span></div>
                 {/if}
@@ -52,7 +52,7 @@
             </a>
             <a   class="col-span-6 md:col-span-3 border-2  bg-[color:var(--color-background)] border-black h-56 hover-content" href="/poetry/{poetry[1].slug}">
             <li class="min-h-56">
-              <div class="h-24 p-6">
+              <div class="p-6 mt-6">
                 {#if poetry[1].featured == "TRUE"}
                 <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> </span></div>
                 {/if}

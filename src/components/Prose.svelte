@@ -36,7 +36,7 @@
           >
             <a href="/prose/{item.slug}">
               <div
-                class="flex flex-col items-center min-h-[170px] gap-2 md:min-h-[240px] py-12 justify-between"
+                class="flex flex-col items-center min-h-[170px] gap-2 md:min-h-[300px] py-12 justify-around"
               >
                 {#if item.featured == "TRUE"}
                   <div class="flex py-1 justify-center items-center">{@html star}</div>
