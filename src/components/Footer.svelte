@@ -5,12 +5,14 @@
   export let keywords;
   export let current;
   let stories = [];
-
+  let d = new Date(); 
+  let currentYear = d.getFullYear(); 
   export const prerender = true;
 
   const links = [
-    { name: "contact", url: "https://thedivtagguy.com/contact" },
-    { name: "twitter", url: "https://twitter.com/thedivtagguy/" },
+    { name: "contact", url: "mailto:csgs@ashoka.ac.in" },
+    { name: "instagram", url: "https://twitter.com/csgs_ashoka/" },
+    { name: "facebook", url: "https://facebook.com/csgsashoka"}
   ];
 
 </script>
@@ -20,9 +22,7 @@
   <div class="w-[200px] mx-auto pb-4">
     <img preload src="/assets/full_logo.png" alt="CSGS Logo"/>
   </div>
-  <p class="text-center mx-auto text-xs py-4 font-mono font-semibold  text-black  whitespace-pre-wrap">
-    &lt;/&gt; with Svelte, Tailwind, Google Docs & &lt;3 in Bangalore, IN
-  </p>
+
   <div class="flex mx-auto font-sans font-bold gap-6 text-xs justify-center items-center ">
     {#each links as link}
       <div>
@@ -34,6 +34,11 @@
       </div>
     {/each}
   </div>
+  <p class="text-center mx-auto text-sm py-2 mt-2 font-mono font-semibold  text-black  whitespace-pre-wrap">
+    &copy; Copyright {currentYear} <br>Centre for Gender and Sexuality Studies, Ashoka University </p>
+    <p class="text-center font-light mx-auto text-[0.6rem]  font-mono font-semibold  text-black  whitespace-pre-wrap">
+     Background photographs by <a class="underline hover:cursor-pointer hover:text-purple-700" href="https://instagram.com/tamedwildflower" rel="external">Srija U</a>
+      </p>
 </section>
 
 

@@ -17,7 +17,7 @@
                 <li class="col-span-6 border-t-[3px] lg:my-4 border-black">
                     <a href="/articles/{item.slug}" class="block hover:text-[color:var(--color-text)]">
 
-                    <div class="flex py-4 justify-start items-start gap-6">
+                    <div class="md:flex flex-col md:flex-row py-4 justify-start items-start gap-6">
                         <div class="flex-0">
                             <span class="text-xl"><span class="font-bold">[</span>{i + 1}<span class="font-bold"> ]</span>
                         </div>
@@ -25,7 +25,7 @@
                                 <h3 class="lg:text-2xl text-xl font-mono hover:underline hover:cursor-pointer ">{item.title}</h3>
                         </div>
                        
-                        <div class="flex justify-end flex-col items-end">
+                        <div class="flex justify-end md:py-0 py-2 flex-col md:items-end items-start">
                             <span class="text-sm font-mono">{item.author}</span>
                             {#if item.featured == "TRUE"}
                             <div class="flex py-2  justify-start items-center">{@html star}</div>

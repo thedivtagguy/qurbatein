@@ -26,13 +26,13 @@
                 </div>
               </li>
             </a>
-            <a  class="col-span-6 md:col-span-4 border-2 bg-[color:var(--color-primary)] h-56 hover:border-2 hover-content" href="/poetry/{poetry[2].slug}" >
+            <a  class="col-span-6 md:col-span-4 border-2 bg-[color:var(--color-primary)] md:h-full h-44 hover:border-2 hover-content" href="/poetry/{poetry[2].slug}" >
             <li class="min-h-56">
               <div class="p-6 mt-0 md:mt-6 text-white">
                 {#if poetry[2].featured == "TRUE"}
                   <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> </span></div>
                   {/if}
-                <h3 class="font-mono text-center font-semibold text-4xl">{poetry[2].title}</h3>
+                <h3 class="font-mono text-center font-semibold text-2xl">{poetry[2].title}</h3>
                 <hr class="divider-white ">
                 <p class="text-center text-xl leading-10 tracking-tight text-white md:text-center sm:leading-none md:text-6xl lg:text-[1.5rem]">{poetry[2].author}</p>
               </div>
@@ -44,7 +44,7 @@
                 {#if poetry[3].featured == "TRUE"}
                 <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> </span></div>
                 {/if}
-                <h3 class="font-libre italic  text-center font-semibold text-5xl">{poetry[3].title}</h3>
+                <h3 class="font-libre italic  text-center font-semibold text-2xl">{poetry[3].title}</h3>
                 <hr class="divider">
                 <p class="text-center text-xl leading-10 tracking-tight text-[color:var(--color-text)] md:text-center sm:leading-none md:text-6xl lg:text-[1.5rem]">{poetry[3].author}</p>
               </div>
@@ -56,7 +56,7 @@
                 {#if poetry[1].featured == "TRUE"}
                 <div class="flex py-1 justify-center items-center">{@html star} <span class="text-[color:#eac638] px-2 font-bold uppercase"> </span></div>
                 {/if}
-                <h3 class="font-libre  italic text-center font-semibold text-5xl">{poetry[1].title}</h3>
+                <h3 class="font-libre  italic text-center font-semibold text-2xl">{poetry[1].title}</h3>
                 <hr class="divider">
                 <p class="text-center text-xl leading-10 tracking-tight md:text-center sm:leading-none md:text-6xl lg:text-[1.5rem]">{poetry[1].author}</p>
               </div>

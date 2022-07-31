@@ -1,8 +1,8 @@
 <script>
-  export let title = "Qurbatein";
+  export let title = "Qurbatein Volume 1";
   export let description =
-    "Aman's platform for a regular mishmash of design and code gimmickry";
-  export let url = "https://thedivtagguy.com";
+    "A non-profit gender and sexuality bi-annual by the Centre for Studies in Gender and Sexuality (CSGS) at Ashoka University";
+  export let url = "https://csgs.ac.in";
   // export let slug = 
   //   "common/assets/thumbnails/960/social.jpg"
 </script>
@@ -17,11 +17,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="description" content={description} />
-  <meta name="author" content="Aman Bhargava" />
+  <meta name="author" content="Centre for Studies in Gender and Sexuality" />
   <meta name="news_keywords" content="" />
 
   <meta property="og:title" content={title} />
-  <meta property="og:site_name" content="thedivtagguy" />
+  <meta property="og:site_name" content="Qurbatein by CSGS" />
   <meta property="og:url" content={url} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="article" />
@@ -33,8 +33,8 @@
   <meta property="og:image:height" content="600" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="https://thedivtagguy.com" />
-  <meta name="twitter:creator" content="@thedivtagguy" />
+  <meta name="twitter:site" content="https://csgs.ac.in" />
+  <meta name="twitter:creator" content="@csgs_ashoka" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <!-- <meta name="twitter:image:src" content="https://thedivtagguy.com/{slug}" /> -->
