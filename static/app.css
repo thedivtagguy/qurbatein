@@ -1673,6 +1673,9 @@ h2 {
   .md\:w-4\/5 {
     width: 80%;
   }
+  .md\:w-full {
+    width: 100%;
+  }
   .md\:max-w-3xl {
     max-width: 48rem;
   }
@@ -1681,6 +1684,12 @@ h2 {
   }
   .md\:max-w-lg {
     max-width: 32rem;
+  }
+  .md\:max-w-xl {
+    max-width: 36rem;
+  }
+  .md\:max-w-2xl {
+    max-width: 42rem;
   }
   .md\:flex-row {
     -webkit-box-orient: horizontal;

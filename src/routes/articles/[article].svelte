@@ -47,11 +47,11 @@
 
 {#if post.title != "404"}
   <main>
-    <section class="mx-auto container max-w-sm md:w-4/5 pt-12 pb-6">
+    <section class="mx-auto container max-w-sm md:max-w-2xl md:w-4/5 pt-12 pb-6">
       <div class="top mx-auto">
         <img src="/assets/header.png" class="mx-auto pb-6" width="250" alt={post.title} />
         <h1
-          class="font-dm px-4 text-5xl text-center italic leading-royal font-extrabold text-[color:var(--color-text)]"
+          class="font-dm md:px-0 px-4 text-5xl text-center italic leading-royal font-extrabold text-[color:var(--color-text)]"
         >
           {post.title}
         </h1>
