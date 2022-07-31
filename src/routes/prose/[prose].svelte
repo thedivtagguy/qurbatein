@@ -51,25 +51,13 @@ import Footnotes from "$components/Blocks/Footnotes.svelte";
 <section class="mx-auto container w-4/5 pt-12 pb-6">
 <div class="top mx-auto">
     <img src="/assets/header.png" class="mx-auto pb-6" width="250" alt={post.title} />
-    <h1 class="font-dm  {titleClass} text-center italic leading-royal font-extrabold text-[color:var(--color-text)]">{post.title}</h1>
+    <h1 class="font-dm text-5xl px-4 text-center italic leading-royal font-extrabold text-[color:var(--color-text)]">{post.title}</h1>
     <hr class="border-b-[1px] my-6 border-[color:var(--color-text)] w-[50px] mx-auto" />
     <h2 class="pb-6 font-libre tracking-wide text-center text-xl">{post.author}</h2>
-    <!-- <hr class="border-b-[1px]  border-[color:var(--color-accent)] w-full" /> -->
-</div>
-<div class="bottom">
-    <!-- <img class="w-full opacity-30" src="/assets/topper.png" alt={post.title} /> -->
 </div>
 </section>
 
 <section class="mx-auto px-6 lg:w-2/3">
-    <!-- {#if post.quote}
-    <blockquote class="text-center bg-[color:var(--color-primary)] text-white p-8 my-8">
-        <p class="text-left italic text-xl ">{post.quote.text}</p>
-        {#if post.quote.attribution}
-        <p class="text-right text-xl ">{post.quote.attribution}</p>
-        {/if}
-    </blockquote>
-    {/if} -->
 
    {#each post.blocks as block}
     {#if block.Type == "text"}

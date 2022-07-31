@@ -52,7 +52,7 @@
       <div class="top mx-auto">
         <img src="/assets/header.png" class="mx-auto pb-6" width="250" alt={post.title} />
         <h1
-          class="font-dm  text-5xl text-center italic leading-royal font-extrabold text-[color:var(--color-text)]"
+          class="font-dm px-4 text-5xl text-center italic leading-royal font-extrabold text-[color:var(--color-text)]"
         >
           {post.title}
         </h1>
@@ -86,8 +86,8 @@
       {/each}
 
       {#if post.footnotes}
-      <Footnotes text={post.footnotes} />
-    {/if}
+        <Footnotes text={post.footnotes} />
+      {/if}
 
 
       {#each post.blocks as block}
