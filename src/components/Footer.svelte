@@ -16,7 +16,7 @@
 <footer class="max-w-5xl mx-auto py-4">
 <section class="about py-4">
   <div class="w-[200px] mx-auto pb-4">
-    <a href="https://csgs.ac.in"><img preload src="/assets/full_logo.png" alt="CSGS Logo"/></a>
+    <a href="https://csgs.ashoka.edu.in/"><img preload src="/assets/full_logo.png" alt="CSGS Logo"/></a>
   </div>
 
   <div class="flex mx-auto font-sans font-bold gap-6 text-xs justify-center items-center ">

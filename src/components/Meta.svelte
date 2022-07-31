@@ -2,7 +2,7 @@
   export let title = "Qurbatein Volume 1";
   export let description =
     "A non-profit gender and sexuality bi-annual by the Centre for Studies in Gender and Sexuality (CSGS) at Ashoka University";
-  export let url = "https://csgs.ac.in";
+  export let url = "https://csgs.ashoka.edu.in/";
   // export let slug = 
   //   "common/assets/thumbnails/960/social.jpg"
 </script>
@@ -33,7 +33,7 @@
   <meta property="og:image:height" content="600" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="https://csgs.ac.in" />
+  <meta name="twitter:site" content="https://csgs.ashoka.edu.in/" />
   <meta name="twitter:creator" content="@csgs_ashoka" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
