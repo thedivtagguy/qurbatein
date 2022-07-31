@@ -3,8 +3,7 @@
   export let description =
     "A non-profit gender and sexuality bi-annual by the Centre for Studies in Gender and Sexuality (CSGS) at Ashoka University";
   export let url = "https://csgs.ashoka.edu.in/";
-  // export let slug = 
-  //   "common/assets/thumbnails/960/social.jpg"
+  export let slug =  "/assets/social.png"
 </script>
 
 <svelte:head>
@@ -27,7 +26,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="en_US" />
 
-  <!-- <meta property="og:image" content="https://thedivtagguy.com/{slug}" /> -->
+  <meta property="og:image" content="https://csgs-qurbatein.netlify.app/{slug}" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="600" />
@@ -37,7 +36,7 @@
   <meta name="twitter:creator" content="@csgs_ashoka" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
-  <!-- <meta name="twitter:image:src" content="https://thedivtagguy.com/{slug}" /> -->
+  <meta name="twitter:image:src" content="https://csgs-qurbatein.netlify.app/{slug}" />
 
   <meta name="robots" content="max-image-preview:large" />
 
