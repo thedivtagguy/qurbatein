@@ -8,7 +8,7 @@
     }
 </script>
 <section class="relative pullquote border-t-2 max-w-xl mx-auto border-gray-200 my-8 py-6 border-b-2">
-   <p class="text-5xl italic font-cormorant font-bold text-left ">
+   <p class="text-3xl italic font-cormorant font-bold text-left ">
         {@html text}
    </p>
 </section>

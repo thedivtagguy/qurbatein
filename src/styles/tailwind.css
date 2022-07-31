@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
   }
-  p {
+  p , #text {
     font-size: 18px;
     font-family: 'Source Sans Pro', 'sans-serif';
     line-height: 1.85rem;
@@ -34,6 +34,12 @@
     @apply  border-white border-[1px] w-1/2 mx-auto my-6;
 
    }
+
+   h2 {
+    @apply text-3xl font-dm font-semibold;
+   }
+
+
 }
 
 /* Injects Tailwind's component classes & any component classes registered by plugins. */

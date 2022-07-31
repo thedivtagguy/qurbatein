@@ -63,5 +63,9 @@ module.exports = [
   {
     id: "1p1GBcnjZfHt8tnDfM2u39mxc4aqjSSFK0ykenEIUhMU",
     filepath: "src/data/posts/seduction-of-the-night.json"
+  },
+  {
+    id: "1_ThAq2vrODgyyryFHpMrzsfUb9klYhxvmoYjq-2DZWU",
+    filepath: "src/data/posts/eat-prey-love.json"
   }
 ];

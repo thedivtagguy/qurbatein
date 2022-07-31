@@ -1,6 +1,5 @@
 <script>
      import { marked } from 'marked';
-     import SvelteMarkdown from 'svelte-markdown'
      export let text;
      export let breaks;
     if (!text)
