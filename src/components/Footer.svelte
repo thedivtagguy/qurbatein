@@ -30,9 +30,9 @@
       </div>
     {/each}
   </div>
-  <p class="text-center mx-auto text-sm py-2 mt-2 font-mono font-semibold  text-black  whitespace-pre-wrap">
-    &copy; Copyright {currentYear} <br>Centre for Gender and Sexuality Studies, Ashoka University </p>
-    <p class="text-center font-light mx-auto text-[0.6rem]  font-mono font-semibold  text-black  whitespace-pre-wrap">
+  <p class="text-center mx-auto text-xs px-2 py-2 mt-2 font-mono font-semibold  text-black  whitespace-pre-wrap">
+    &copy; Copyright {currentYear} <br>Centre for Studies in Gender and Sexuality, Ashoka University </p>
+    <p class="text-center font-light mx-auto text-[0.6rem]  font-mono text-black  whitespace-pre-wrap">
      Background photographs by <a class="underline hover:cursor-pointer hover:text-purple-700" href="https://instagram.com/tamedwildflower" rel="external">Srija U</a>
       </p>
 </section>

@@ -1,5 +1,5 @@
 <script>
-  export let title = "Qurbatein Volume 1";
+  export let title = "Qurbatein: Issue 1";
   export let description =
     "A non-profit gender and sexuality bi-annual by the Centre for Studies in Gender and Sexuality (CSGS) at Ashoka University";
   export let url = "https://csgs.ashoka.edu.in/";

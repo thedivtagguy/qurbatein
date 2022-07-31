@@ -5,11 +5,10 @@
 <section class="py-20 max-w-7xl lg:px-12 ">
   <div class="px-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <h2 class="text-3xl font-cormorant font-bold tracking-tight text-gray-900 sm:text-4xl md:text-7xl xl:text-7xl">
-         A Nice Headline Fits Here
+         Issue 1: Sex and the City
       </h2>
       <p class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-        Lorem ipsum dolor sit amet, inermis detracto elaboraret ius at. Noluisse fabellas his no. Eos ex idque diceret fastidii, duo an lorem explicari. Ut per ullum evertitur, melius animal in has.
-      </p>
+        This issue aims to ask questions related to cities and sexualities, focusing on the complex intersections of geography and desire. Who inhabits the city? Whom does the city desire? What are normative geographies and how do they affect sex and sexuality? Why is the city deemed a space of sexual liberation? Whose stories make up the sexual and urban landscapes of cities?      </p>
      
   </div>
 </section>

@@ -67,5 +67,9 @@ module.exports = [
   {
     id: "1_ThAq2vrODgyyryFHpMrzsfUb9klYhxvmoYjq-2DZWU",
     filepath: "src/data/posts/eat-prey-love.json"
+  },
+  {
+    id: "1UMgSE6NEUGEbnjmoaMg_rUbD8w_DLq81h5g8shzqEAA",
+    filepath: "src/data/about.json"
   }
 ];
