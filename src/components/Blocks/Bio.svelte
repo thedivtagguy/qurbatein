@@ -17,6 +17,8 @@
         {:else}
         <div></div>
         {/if}
+
+        
         {#if typeof name == 'string'}
         <h4 class="font-bold text-2xl ">{name}</h4>
         {:else}
