@@ -76,7 +76,7 @@
 
 
         {#if block.Type == "h2"}
-        <section class="lg:w-2/3 py-2 mx-auto">
+        <section class="py-4 mx-auto">
     
          <h2> {block.Text}</h2>
         </section>
