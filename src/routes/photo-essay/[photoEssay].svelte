@@ -39,6 +39,10 @@ export const prerender = true;
     // Convert comma separated string to array
     let authors = post.author.split(',');
     authors = authors.map(string => string.trim())
+  // Find block of type 'Bio' in the blocks array in post
+  const bio = post.blocks.filter(block => block.Type === 'Bio')[0];
+  let authorPhotos = bio.photo.split(',');
+  authorPhotos = authorPhotos.map(string => string.trim())
 	
 </script>
 {#if post.title != "404"}
@@ -93,7 +97,7 @@ export const prerender = true;
 
     {#each post.blocks as block}
         {#if block.Type == "Bio"}
-            <Bio text={block.Text} name={authors} image={block.photo}/>
+            <Bio text={block.Text} name={authors} image={authorPhotos}/>
         {/if}
     {/each}
 </main>

@@ -35,6 +35,13 @@ export const prerender = true;
     import Bio from "$components/Blocks/Bio.svelte";
 import Footnotes from "$components/Blocks/Footnotes.svelte";
     export let post;
+
+
+      // Find block of type 'Bio' in the blocks array in post
+  const bio = post.blocks.filter(block => block.Type === 'Bio')[0];
+  let authorPhotos = bio.photo.split(',');
+  authorPhotos = authorPhotos.map(string => string.trim())
+  console.log(authorPhotos);
 </script>
 {#if post.title != "404"}
 <main>
@@ -76,7 +83,7 @@ import Footnotes from "$components/Blocks/Footnotes.svelte";
 
     {#each post.blocks as block}
         {#if block.Type == "Bio"}
-            <Bio text={block.Text} name={post.author} image={block.photo}/>
+            <Bio text={block.Text} name={post.author} image={authorPhotos}/>
         {/if}
     {/each}
 
