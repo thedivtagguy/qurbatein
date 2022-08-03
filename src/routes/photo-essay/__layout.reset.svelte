@@ -7,11 +7,12 @@
     import "/src/styles/tailwind.css";
     export const router = true;
     import { page } from "$app/stores"
+    console.log($page.params)
   </script>
       <Meta/>
       <Menu/>
   <main class="bg-[color:var(--color-background)] max-w-5xl mx-auto" id="content">
     <slot />
-    <Related number="2" related="photo-essay" current={$page.params['photo-essay']}/>
+    <Related number="2" related="photo-essay" current={$page.params.photoEssay}/>
     <Footer/>
   </main>
