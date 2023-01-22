@@ -7,7 +7,7 @@
     import { page } from "$app/stores";
     import "/src/styles/tailwind.css";
     export const router = true;
-    console.log($page.params.poem)
+    import { base, assets } from '$app/paths';
   </script>
   
   <main class="bg-[color:var(--color-background)] w-full" id="content">

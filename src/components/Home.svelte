@@ -5,6 +5,7 @@ import Hero from "./Hero.svelte";
 import PhotoEssay from "./PhotoEssay.svelte";
 import Poetry from "./Poetry.svelte";
 import Prose from "./Prose.svelte";
+import { base, assets } from '$app/paths';
 </script>
 
 <!-- Iterate and show all story headings -->

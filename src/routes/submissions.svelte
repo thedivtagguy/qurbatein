@@ -11,13 +11,15 @@
   import Menu from "$components/Menu.svelte";
   import post from "$data/submissions.json"
   import Meta from "$components/Meta.svelte";
+  import { base, assets } from '$app/paths';
+
 </script>
 <Meta  />
 <Menu />
 <main class="max-w-6xl mx-auto" >
     <section class="mx-auto container max-w-xl pt-12 pb-6">
       <div class="top mx-auto">
-        <img src="/assets/header.png" class="mx-auto pb-6" width="250" alt={post.title} />
+        <img src="{assets}/assets/header.png" class="mx-auto pb-6" width="250" alt={post.title} />
         <h1
           class="font-dm px-4 text-5xl text-center italic leading-royal font-extrabold text-[color:var(--color-text)]"
         >

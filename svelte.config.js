@@ -9,7 +9,7 @@ import autoprefixer from "autoprefixer";
 const { thedivtagguy } = JSON.parse(fs.readFileSync("package.json", "utf8"));
 const dev = process.env.NODE_ENV === "development";
 const dir = thedivtagguy ? thedivtagguy.subdirectory : "";
-const prefix = dir.startsWith("/") ? "" : "/";
+const prefix = dir.startsWith("/") ? "" : "csgs.ashoka.edu.in";
 const base = dev || !dir ? "" : `${prefix}${dir}`;
 
 const preprocess = sveltePreprocess({
@@ -39,7 +39,9 @@ const config = {
       plugins: [dsv(), svg()],
     },
     paths: {
-      base
+      base,
+   assets: base ? `https://csgs.ashoka.edu.in/qurbatein/issue-1` : "https://csgs.ashoka.edu.in/qurbatein/issue-1",
+   // assets: base ? `https://amanbhargava.in/qurbatein/issue-1` : "https://amanbhargava.in/qurbatein/issue-1",
     }
   }
 };

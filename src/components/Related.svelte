@@ -3,6 +3,7 @@
     export let related;
     export let number = 3;
     export let current;
+    import { base, assets } from '$app/paths';
 
     // Choose three items where category == related and slug != current
     let relatedItems = [];
@@ -23,7 +24,7 @@
     
     <section class="flex lg:flex-row flex-col justify-start gap-8 items-start lg:items-center">
         {#each items as item}
-                <a href="/{related}/{item.slug}"  rel="external">
+                <a href="{base}/{related}/{item.slug}"  rel="external">
                     <div class="lg:p-6 p-4 border-2 hover:cursor-pointer border-[color:var(--color-text)]">
                         <div class="top mx-auto">
                             <h1 class="font-poppins text-xl  lg:text-3xl italic font-bold text-left py-2 lg:py-6 text-[color:var(--color-text)]">{item.title}</h1>

@@ -35,6 +35,7 @@ export const prerender = true;
     import Bio from "$components/Blocks/Bio.svelte";
 import Footnotes from "$components/Blocks/Footnotes.svelte";
     export let post;
+    import { base, assets } from '$app/paths';
 
 
       // Find block of type 'Bio' in the blocks array in post
@@ -47,7 +48,7 @@ import Footnotes from "$components/Blocks/Footnotes.svelte";
 <main>
 <section class="mx-auto container w-4/5 pt-12 pb-6">
 <div class="top mx-auto">
-    <img src="/assets/header.png" class="mx-auto pb-6" width="250" alt={post.title} />
+    <img src="{assets}/assets/header.png" class="mx-auto pb-6" width="250" alt={post.title} />
     <h1 class="font-dm text-5xl px-4 text-center italic leading-royal font-extrabold text-[color:var(--color-text)]">{post.title}</h1>
     <hr class="border-b-[1px] my-6 border-[color:var(--color-text)] w-[50px] mx-auto" />
     <h2 class="pb-6 font-libre tracking-wide text-center text-xl">{post.author}</h2>

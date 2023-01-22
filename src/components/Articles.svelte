@@ -1,6 +1,7 @@
 <script>
     import content from "$data/content.csv"
     import star from "$svg/star.svg"
+    import { base, assets } from '$app/paths';
     // Keep only content that has category "article"
     const article = content.filter(item => item.category === "articles")
   </script>
@@ -15,7 +16,7 @@
                 {#each article as item, i}
 
                 <li class="col-span-6 border-t-[3px] lg:my-4 border-black">
-                    <a href="/articles/{item.slug}" class="block hover:text-[color:var(--color-text)]">
+                    <a href="{base}/articles/{item.slug}" class="block hover:text-[color:var(--color-text)]">
 
                     <div class="md:flex flex-col md:flex-row py-4 justify-start items-start gap-6">
                         <div class="flex-0">
@@ -42,7 +43,7 @@
   
   <style>
     #articles {
-    background-image: url('/assets/home22.jpg');
+    background-image: url('https://i.ibb.co/RTt47pB/home22.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

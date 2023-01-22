@@ -29,6 +29,7 @@ export const prerender = true;
 	}
 </script>
 <script>
+    import { base, assets } from '$app/paths';
     import BodyText from "$components/Blocks/BodyText.svelte";
     import Bio from "$components/Blocks/Bio.svelte";
     import convertToSlug from "$utils/slugify";
@@ -71,9 +72,9 @@ export const prerender = true;
                 <div class="relative flex flex-col items-start justify-start w-full h-full px-2 lg:px-16">
                     <section class="mx-auto container  pb-6">
                         <div class="top mx-auto">
-                            <img class="lg:py-4 w-1/2 lg:mx-auto" src="/assets/poetry.png" alt={poem.title} />
+                            <img class="lg:py-4 w-1/2 lg:mx-auto" src="{assets}/assets/poetry.png" alt={poem.title} />
                             <h1 class="font-dm italic  {poem.title.length > 15 ? 'lg:large-text text-5xl' : 'small-text'} pb-8 capitalize font-extrabold lg:w-2/3 text-left  xl:text-center mx-auto lg:text-center py-4 text-[color:var(--color-text)]">{poem.title}</h1>
-                            <img src="/assets/bottom.png" class="w-1/3 lg:mx-auto" alt={poem.title} />
+                            <img src="{assets}/assets/bottom.png" class="w-1/3 lg:mx-auto" alt={poem.title} />
                         </div>
                         <div class="bottom">
                             <!-- <img class="w-full opacity-30" src="/assets/topper.png" alt={post.title} /> -->
@@ -118,7 +119,7 @@ export const prerender = true;
                             <img class="py-4 w-1/2 mx-auto" src="/assets/poetry.png" alt={post.title} />
                             <h1 class="font-dm italic  {post.title.length > 15 ? 'large-text' : 'small-text'} font-extrabold text-center  text-[color:var(--color-text)]">{post.title}</h1>
                             <h2 class="lg:py-6  py-2 font-libre tracking-wide text-center text-xl">{post.author}</h2>
-                            <img src="/assets/bottom.png" class="w-1/3 mx-auto" alt={post.title} />
+                            <img src="{assets}/assets/bottom.png" class="w-1/3 mx-auto" alt={post.title} />
                         </div>
                         <div class="bottom">
                             <!-- <img class="w-full opacity-30" src="/assets/topper.png" alt={post.title} /> -->

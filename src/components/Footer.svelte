@@ -2,7 +2,7 @@
   let d = new Date(); 
   let currentYear = d.getFullYear(); 
   export const prerender = true;
-
+  import { base, assets } from '$app/paths';
   const links = [
     { name: "contact", url: "mailto:csgs@ashoka.ac.in" },
     { name: "twitter", url: "https://twitter.com/csgs_ashoka/" },
@@ -16,7 +16,7 @@
 <footer class="max-w-5xl mx-auto py-4">
 <section class="about py-4">
   <div class="w-[200px] mx-auto pb-4">
-    <a href="https://csgs.ashoka.edu.in/"><img preload src="/assets/full_logo.png" alt="CSGS Logo"/></a>
+    <a href="https://csgs.ashoka.edu.in/"><img preload src="{assets}/assets/full_logo.png" alt="CSGS Logo"/></a>
   </div>
 
   <div class="flex mx-auto font-sans font-bold gap-6 text-xs justify-center items-center ">

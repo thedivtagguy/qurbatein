@@ -3,6 +3,8 @@
   // Keep only content that has category "Poetry"
   const prose = content.filter((item) => item.category === "prose");
   import star from "$svg/star.svg";
+  import { base, assets } from '$app/paths';
+
 </script>
 
 <!-- Section 1 -->
@@ -34,7 +36,7 @@
           <div
             class="flex flex-col bg-[color:var(--color-background)]   hover:bg-[color:var(--color-text)] border-[0.5px] border-[color:var(--color-background)]   hover:cursor-pointer hover:text-[color:var(--color-background)] items-center justify-between w-full px-0 mx-0   lg:w-1/3  lg:px-8 "
           >
-            <a href="/prose/{item.slug}">
+            <a href="{base}/prose/{item.slug}">
               <div
                 class="flex flex-col items-center min-h-[170px] gap-2 md:min-h-[300px] py-12 justify-around"
               >
@@ -58,7 +60,7 @@
 
 <style>
   #prose {
-    background-image: url("/assets/home4.jpg");
+    background-image: url("https://i.ibb.co/Snsrh4W/home4.jpg");
     background-size: cover;
     background-position: 0 -190px;
   }

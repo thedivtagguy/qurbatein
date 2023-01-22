@@ -3,7 +3,7 @@
   import star from "$svg/star.svg"
   // Keep only content that has category "Poetry"
   const poetry = content.filter(item => item.category === "poetry")
-  
+  import { base, assets } from '$app/paths';
 </script>
 
 <section  id="poetry" class="grid min-h-[50vh] py-12 lg:py-28 max-w-9xl mx-auto px-4 lg:grid-cols-8 gap-8 justify-end items-start">
@@ -14,7 +14,7 @@
     <div class=" col-span-5 content flex items-center ">
         <div class="flex-1 max-w-4xl mx-auto p-8">
           <ul class="grid grid-cols-6 gap-8">
-            <a class="col-span-6 md:col-span-2 border-2 bg-[color:var(--color-background)] border-black hover-content" href="/poetry/{poetry[0].slug}">
+            <a class="col-span-6 md:col-span-2 border-2 bg-[color:var(--color-background)] border-black hover-content" href="{base}/poetry/{poetry[0].slug}">
             <li class="min-h-64">
                 <div class="p-6">
                   {#if poetry[0].featured == "TRUE"}
@@ -26,7 +26,7 @@
                 </div>
               </li>
             </a>
-            <a  class="col-span-6 md:col-span-4 border-2 bg-[color:var(--color-primary)] md:h-full h-44 hover:border-2 hover-content" href="/poetry/{poetry[2].slug}" >
+            <a  class="col-span-6 md:col-span-4 border-2 bg-[color:var(--color-primary)] md:h-full h-44 hover:border-2 hover-content" href="{base}/poetry/{poetry[2].slug}" >
             <li class="min-h-56">
               <div class="p-6 mt-0 md:mt-6 text-white">
                 {#if poetry[2].featured == "TRUE"}
@@ -38,7 +38,7 @@
               </div>
              </li>
             </a>
-            <a  class="col-span-6 md:col-span-3 h-56 border-2 border-black bg-[color:var(--color-background)] hover-content" href="/poetry/{poetry[3].slug}" >
+            <a  class="col-span-6 md:col-span-3 h-56 border-2 border-black bg-[color:var(--color-background)] hover-content" href="{base}/poetry/{poetry[3].slug}" >
             <li class="min-h-56">
               <div class="p-6 mt-6">
                 {#if poetry[3].featured == "TRUE"}
@@ -50,7 +50,7 @@
               </div>
              </li>
             </a>
-            <a   class="col-span-6 md:col-span-3 border-2  bg-[color:var(--color-background)] border-black h-56 hover-content" href="/poetry/{poetry[1].slug}">
+            <a   class="col-span-6 md:col-span-3 border-2  bg-[color:var(--color-background)] border-black h-56 hover-content" href="{base}/poetry/{poetry[1].slug}">
             <li class="min-h-56">
               <div class="p-6 mt-6">
                 {#if poetry[1].featured == "TRUE"}
@@ -71,7 +71,7 @@
 
 #poetry {
   height: 100%;
-  background-image: url('/assets/poetry.jpg');
+  background-image: url('https://i.ibb.co/QMmhZJs/poetry.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

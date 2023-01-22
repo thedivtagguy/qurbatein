@@ -1,4 +1,6 @@
-
+<script>
+import { base, assets } from '$app/paths';
+</script>
 <main class="flex lg:flex-row flex-col  bg-[color:#F5EBE0]  justify-between items-center    w-full mx-auto text-gray-600 body-font">
 
 <!-- Section 1 -->
@@ -18,13 +20,13 @@
       <div class="flex justify-items-center items-center  md:-m-2 -m-1">
         <div class="flex justify-around -mt-[160px]  items-center flex-wrap ">
           <div class="md:p-2 p-1 w-1/2">
-            <img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/gallery-1.jpg">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="{assets}/images/gallery-1.jpg">
           </div>
           <div class="md:p-2 p-1 w-2/5">
-            <img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/gallery-2.jpg">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="{assets}/images/gallery-2.jpg">
           </div>
           <div class="md:p-2 p-1 w-full">
-            <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/gallery-3.jpg">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="{assets}/images/gallery-3.jpg">
           </div>
         </div>
       </div>
